@@ -12,7 +12,7 @@ var precoTotal = preco * TotalCompras;
 
 console.log(precoTotal);
 
-//Criar várias vareáveis usando a vírgula para separalas:
+//Criar várias vareáveis usando a vírgula para separalas.(NÃO É UMA VAREÁVEL COMPOSTA!)
 var nome2 = 'Willian',
     cidade = 'Alagoas',
     id = 18;
@@ -22,3 +22,8 @@ console.log(nome2, cidade, id);
 //Pode-se criar a vareável e não definir nenhum valor inicialmente:
 var idade3; //Retornando undefined (como valor INDEFINIDO)
 console.log(idade3);
+
+//Formas de escrever o nome de uma vareável:
+var $nome;
+var _idade;
+var abrirMenu;
