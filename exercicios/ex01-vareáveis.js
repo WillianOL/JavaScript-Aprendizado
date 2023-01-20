@@ -12,8 +12,6 @@ var comidaFavorita;
 comidaFavorita = 'Pizza'
 
 // Declarar 5 variáveis diferentes sem valores
-var estado;
-var cidade;
-var cor;
-var ano;
-var sexo;
+var estado, cidade, cor, ano, sexo;
+
+console.log(nome, idade, comidaFavorita, sexo)
