@@ -20,3 +20,6 @@ console.log(nomeCompleto);
 var km = 20;
 console.log('Você estava a uma velocidade de ' + km + 'km/h');
 //*Sempre que somamos uma string e um número, o resultado final sempre vai ser uma string.*
+
+//Aspas Duplas, simples e Tamplate String
+console.log('Olá "mundo", bom dia!');
