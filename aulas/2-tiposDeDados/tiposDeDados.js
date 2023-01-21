@@ -22,4 +22,7 @@ console.log('Você estava a uma velocidade de ' + km + 'km/h');
 //*Sempre que somamos uma string e um número, o resultado final sempre vai ser uma string.*
 
 //Aspas Duplas, simples e Tamplate String
+//Pode-se criar uma String com aspas SIMPLES com um item de aspas DUPLAS dentro. E vice-versa
 console.log('Olá "mundo", bom dia!');
+console.log("Olá 'mundo', bom dia!");
+//Não pode colocar aspas duplas dentro de duplas ou simples dentro de simples. Pois o JS identifica como fechamento de string
