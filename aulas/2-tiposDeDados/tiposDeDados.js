@@ -26,3 +26,6 @@ console.log('Você estava a uma velocidade de ' + km + 'km/h');
 console.log('Olá "mundo", bom dia!');
 console.log("Olá 'mundo', bom dia!");
 //Não pode colocar aspas duplas dentro de duplas ou simples dentro de simples. Pois o JS identifica como fechamento de string
+
+var velocidade = 120;
+console.log(`Multado, você estava a uma velocidade de ${velocidade}km/h`)
