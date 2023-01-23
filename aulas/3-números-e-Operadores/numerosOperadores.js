@@ -25,5 +25,8 @@ console.log(valor4);
 
 //Unários
 var n1 = 10
-var incremento = n1++ //Aqui o valor ainda é o mesmo, só muda quando o código procede
-console.log(incremento)
+n1++ // Incremento
+console.log(n1) // O valor passa a ser 11 pois somou +1
+var n2 = 10
+n2-- // Decremento
+console.log(n2) // O valor passa a ser 9 pois subtraiu -1
