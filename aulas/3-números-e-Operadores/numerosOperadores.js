@@ -17,8 +17,8 @@ var num = 18
 console.log(isNaN(num)) //Vai retornar um valor booleano (true ou false)
 
 //Ordem de precedência
-var valor1 = 20 + 10 * 2
-var valor2 = (10 - 2) * 2
-var valor3 = 40 / 2 + 2
-var valor4 = 10 + (3 + 2) * 5 - 20 / 2
+var valor1 = 20 + 10 * 2 // 40
+var valor2 = (10 - 2) * 2 // 16
+var valor3 = 40 / 2 + 2 // 22
+var valor4 = 10 + (3 + 2) * 5 - 20 / 2 // 25
 console.log(valor4);
