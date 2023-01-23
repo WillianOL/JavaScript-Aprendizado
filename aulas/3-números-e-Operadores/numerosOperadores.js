@@ -11,3 +11,7 @@ var divi = 10 / 2 // 5
 var exp = 10 ** 2 // 100
 //resto da divisão
 var modulo = 10 % 3 // 1
+
+//Verificar se o valor não é um número NaN
+var num = 18
+console.log(isNaN(num))
