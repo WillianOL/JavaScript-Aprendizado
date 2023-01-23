@@ -1,7 +1,7 @@
 // Qual o resultado da seguinte expressão?
 var total = 10 + 5 * 2 / 2 + 20;
 /*
-Primeiro vai sar feita a multiplicação e depois a divisão, com o resultado sendo 5. Depois vai ser feita as somas e sendo assim o resultado 35
+Primeiro vai sar feita a multiplicação e depois a divisão, com o resultado sendo 5. Depois vai ser feita as somas e sendo assim o resultado é 35
 */
 
 // Crie duas expressões que retornem NaN
