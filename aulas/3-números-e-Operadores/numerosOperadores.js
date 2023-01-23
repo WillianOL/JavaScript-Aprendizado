@@ -14,4 +14,11 @@ var modulo = 10 % 3 // 1
 
 //Verificar se o valor não é um número NaN
 var num = 18
-console.log(isNaN(num))
+console.log(isNaN(num)) //Vai retornar um valor booleano (true ou false)
+
+//Ordem de precedência
+var valor1 = 20 + 10 * 2
+var valor2 = (10 - 2) * 2
+var valor3 = 40 / 2 + 2
+var valor4 = 10 + (3 + 2) * 5 - 20 / 2
+console.log(valor4);
