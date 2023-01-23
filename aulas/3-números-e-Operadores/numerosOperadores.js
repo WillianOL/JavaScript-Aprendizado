@@ -22,3 +22,8 @@ var valor2 = (10 - 2) * 2 // 16
 var valor3 = 40 / 2 + 2 // 22
 var valor4 = 10 + (3 + 2) * 5 - 20 / 2 // 25
 console.log(valor4);
+
+//Unários
+var n1 = 10
+var incremento = n1++ //Aqui o valor ainda é o mesmo, só muda quando o código procede
+console.log(incremento)
