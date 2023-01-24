@@ -67,3 +67,20 @@ var dife1 = 50 != 50 // false
 var dife2 = 50 != "50" // false
 var dife3 = 50 !== "50" // true
 console.log(dife3);
+
+//Operador &&, "e" lógico.
+
+var op1 = true && true; // true
+var op2 = true && false; // false
+var op3 = false && true; // false
+var op4 = 'Cachorro' && 'Gato'; //gato
+var op5 = ( 2 - 2) && (4 + 4); // 0
+console.log(op5)
+
+if( undefined && (5 + 5)){
+  console.log('Verdadeiro')
+} else {
+  console.log('Falso')
+}
+
+
