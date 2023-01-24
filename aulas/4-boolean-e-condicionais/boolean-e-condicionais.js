@@ -39,8 +39,16 @@ if(undefined);
 if('');
 
 //Operador de negação " ! "
-var maiorIdade = true
+var maiorIdade = true;
 
-if(!maiorIdade){
+if(!!maiorIdade){ // Como o valor da vareável é true, e o sinal de negação inverte o valor boolean. Basta adicionar outro "!" para inverter o valor boolean novamente == (true -> false -> true.)
   console.log('Não possue')
 }
+
+//Operadores de comparação
+var comp1 = 5 > 6; // true
+var comp2 = 6 > 5; // true
+var comp3 = 7 < 3; // false
+var comp4 = 3 > 4; // false
+var comp5 = 5 >= 5 // true
+var comp6 = 5 <= 10 //false
