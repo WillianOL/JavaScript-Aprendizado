@@ -52,3 +52,18 @@ var comp3 = 7 < 3; // false
 var comp4 = 3 > 4; // false
 var comp5 = 5 >= 5 // true
 var comp6 = 5 <= 10 //false
+
+//Operador de comparação, sinal de igual.
+// == não testa o tipo de dado. === testa o tipo de dado.
+var igual1 = 50 == 50; // true
+var igual2 = 50 == "50" // true
+var igual3 = 50 === 50; // true
+var igual4 = 50 === "50" // false
+var igual5 = 'Willian' === 'willian'
+console.log(igual5);
+
+//Direfente
+var dife1 = 50 != 50 // false
+var dife2 = 50 != "50" // false
+var dife3 = 50 !== "50" // true
+console.log(dife3);
