@@ -17,11 +17,30 @@ if(possuiApartamento){
 }
 
 //ELSE IF
-var idade = 18;
-if( idade >= 18){
+var idade = 8;
+if( idade >= 18){ // False
   console.log("Maior de idade");
-} else if( idade >= 12){
+} else if( idade >= 12){ // False
   console.log("Adolescente");
-} else if( idade >= 1){
+} else{
   console.log("Criança");
+}
+//Vai executar else pois nenhuma das condições foram verdadeira
+
+//Truthy e Falsy
+//Valores booleanos verdadeiros e falsos.
+
+//Falsy
+if(false);
+if(0);
+if(NaN);
+if(null);
+if(undefined);
+if('');
+
+//Operador de negação " ! "
+var maiorIdade = true
+
+if(!maiorIdade){
+  console.log('Não possue')
 }
