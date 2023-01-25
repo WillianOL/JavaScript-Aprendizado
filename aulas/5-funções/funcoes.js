@@ -10,8 +10,19 @@ console.log(coca(2))
 //Vai retornar um dos dois dependendo do parãmetro passado na função.
 
 //Peso e a altura são parâmetros
-function imc(peso, altura){ //separados por vírgula.
+function imc(peso, altura) { //separados por vírgula.
   var res = peso / (altura ** 2)
   return res
 }
 console.log(imc(58, 1.73)) //Esses valores são os argumentos
+
+function GostoColinario(comidaFavorita){
+  if(comidaFavorita === 'Lasanha'){
+    return 'Você gosta de lasanha'
+  } else if(comidaFavorita === 'Macarronada'){
+    return 'Você gosta de Macarronada'
+  } else{
+    return 'Do que você gosta então?!'
+  }
+}
+console.log(GostoColinario('Lasanha'))
