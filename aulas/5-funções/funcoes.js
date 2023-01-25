@@ -14,8 +14,10 @@ function imc(peso, altura) { //separados por vírgula.
   var res = peso / (altura ** 2)
   return res
 }
-console.log(imc(58, 1.73)) //Esses valores são os argumentos
+console.log(imc(58, 1.73)) 
+//Esses valores são os argumentos
 
+// Outro exemplo
 function GostoColinario(comidaFavorita){
   if(comidaFavorita === 'Lasanha'){
     return 'Você gosta de lasanha'
