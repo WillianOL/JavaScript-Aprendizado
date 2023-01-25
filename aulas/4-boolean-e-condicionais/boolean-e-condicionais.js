@@ -69,18 +69,36 @@ var dife3 = 50 !== "50" // true
 console.log(dife3);
 
 //Operador &&, "e" lógico.
-
 var op1 = true && true; // true
 var op2 = true && false; // false
 var op3 = false && true; // false
 var op4 = 'Cachorro' && 'Gato'; //gato
-var op5 = ( 2 - 2) && (4 + 4); // 0
+var op5 = (2 - 2) && (4 + 4); // 0
 console.log(op5)
 
-if( undefined && (5 + 5)){
+var possuiFaculdade = (10 + 10) && (5 + 9)
+
+if(possuiFaculdade){
   console.log('Verdadeiro')
+  console.log(possuiFaculdade);
 } else {
   console.log('Falso')
+  console.log(possuiFaculdade);
 }
 
+//Switch
+var cabelo = 'Cacheado'
 
+switch(cabelo){
+  case 'Liso':
+    console.log('Seu cabelo é liso')
+    break
+  case 'Crespo':
+    console.log('Seu cabelo é crespo');
+    break
+  case 'Cacheado':
+    console.log('Seu cabelo é cacheado');
+    break
+  default:
+    console.log('Você é careca');
+}
