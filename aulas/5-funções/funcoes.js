@@ -12,9 +12,9 @@ console.log(coca(2))
 //Peso e a altura são parâmetros
 function imc(peso, altura) { //separados por vírgula.
   var res = peso / (altura ** 2)
-  console.log(res)
+  return res
 }
-console.log(imc(52, 1.73))
+console.log(imc(55, 1.73))
 //Esses valores são os argumentos
 
 // Outro exemplo
@@ -34,3 +34,10 @@ console.log(GostoColinario('Lasanha'))
   addEventListener('click', function(){
     console.log('Clicou!')
   }) // Evento de click e fução anônima.
+
+function imc2(peso, altura){
+  var result = peso / (altura ** 2)
+  console.log(result)
+}
+
+imc2(52, 1.80)
