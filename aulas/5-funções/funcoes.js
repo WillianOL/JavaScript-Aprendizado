@@ -12,9 +12,9 @@ console.log(coca(2))
 //Peso e a altura são parâmetros
 function imc(peso, altura) { //separados por vírgula.
   var res = peso / (altura ** 2)
-  return res
+  console.log(res)
 }
-console.log(imc(58, 1.73)) 
+console.log(imc(52, 1.73))
 //Esses valores são os argumentos
 
 // Outro exemplo
@@ -28,3 +28,9 @@ function GostoColinario(comidaFavorita){
   }
 }
 console.log(GostoColinario('Lasanha'))
+
+// Argumentos é funções
+//Pode-se criar funções a partir de eventos da Web. Chamadas de Callback.
+  addEventListener('click', function(){
+    console.log('Clicou!')
+  }) // Evento de click e fução anônima.
