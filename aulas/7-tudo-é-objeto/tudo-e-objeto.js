@@ -11,5 +11,7 @@ console.log(n1.toString())
 // Elementos DOM
 var button = document.querySelector('.btn') //Acessando a tag 'a' atravéz de seu seletor CSS.
 button.addEventListener('click', function(){
-    return console.log('Ola');
+    return console.log('Clicou');
 })
+
+button.classList.add('ativo'); //Adicionando a class 'ativo'
