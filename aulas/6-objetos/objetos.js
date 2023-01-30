@@ -28,7 +28,7 @@ console.log(metodo.precoSapatos(20));
 console.log(metodo.number(5));
 
 // Criar um objeto
-var carro = {};
+var carro = {}; 
 var mochila = {};
 
 // Dot notation get
