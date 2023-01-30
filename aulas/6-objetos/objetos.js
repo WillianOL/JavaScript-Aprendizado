@@ -35,7 +35,10 @@ var mochila = {};
 var menu = {
     width: 500,
     height: 100,
-    backgroundColor: "#97f"
+    backgroundColor: "#97f",
+    metadeWidth() {
+        return this.width / 2
+    }
 }
 var capa = menu.backgroundColor //Atribuir valores com objetos
 
@@ -44,4 +47,4 @@ menu.color = '#f00' // Criando novas propriedades
 
 menu.mensagem = function() {
     console.log('Adicionando um metodo a um objeto')
-}
+} // Com isso também pode-se criar novos métodos/funções
