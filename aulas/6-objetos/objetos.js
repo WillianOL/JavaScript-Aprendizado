@@ -43,5 +43,5 @@ menu.backgroundColor = '#3ff' // Atribuindo novos valores a propriedade
 menu.color = '#f00' // Criando novas propriedades
 
 menu.mensagem = function() {
-    console.log('Metodo')
+    console.log('Adicionando um metodo a um objeto')
 }
