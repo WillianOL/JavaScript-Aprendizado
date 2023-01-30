@@ -28,7 +28,7 @@ console.log(metodo.precoSapatos(20));
 console.log(metodo.number(5));
 
 // Criar um objeto
-var carro = {}; 
+var carro = {};
 var mochila = {};
 
 // Dot notation get
@@ -37,14 +37,14 @@ var menu = {
     height: 100,
     backgroundColor: "#97f",
     metadeWidth() {
-        return this.width / 2
+        return this.width / 2;
     }
 }
 var capa = menu.backgroundColor //Atribuir valores com objetos
 
-menu.backgroundColor = '#3ff' // Atribuindo novos valores a propriedade
-menu.color = '#f00' // Criando novas propriedades
+menu.backgroundColor = '#3ff'; // Atribuindo novos valores a propriedade
+menu.color = '#f00'; // Criando novas propriedades
 
 menu.mensagem = function() {
-    console.log('Adicionando um metodo a um objeto')
+    console.log('Adicionando um metodo a um objeto');
 } // Com isso também pode-se criar novos métodos/funções
