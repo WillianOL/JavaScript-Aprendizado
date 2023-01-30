@@ -26,3 +26,22 @@ var metodo = {
 console.log(metodo.precoCoca(4));
 console.log(metodo.precoSapatos(20));
 console.log(metodo.number(5));
+
+// Criar um objeto
+var carro = {};
+var mochila = {};
+
+// Dot notation get
+var menu = {
+    width: 500,
+    height: 100,
+    backgroundColor: "#97f"
+}
+var capa = menu.backgroundColor //Atribuir valores com objetos
+
+menu.backgroundColor = '#3ff' // Atribuindo novos valores a propriedade
+menu.color = '#f00' // Criando novas propriedades
+
+menu.mensagem = function() {
+    console.log('Metodo')
+}
