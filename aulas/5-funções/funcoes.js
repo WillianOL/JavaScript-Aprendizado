@@ -39,5 +39,27 @@ function imc2(peso, altura){
   var result = peso / (altura ** 2)
   console.log(result)
 }
-
 imc2(52, 1.80)
+
+// Funções podem retornar qualquer tipo de dado, até mesmo outras funções
+function verificarIdade(idade){
+  console.log(typeof idade)
+  if(typeof idade !== 'number'){
+    return 'Por favor, preencha com um número.'
+  } else if(idade >= 60){
+    return true
+  } else{
+    return false
+  } // ATENÇÃO - Não é uma boa aplicação uma função returnar diferentes tipos de dados.
+}
+console.log(verificarIdade(60))
+
+//Escopo
+//Vareáveis e funções definidas em funções só existem dentro delas. Ou seja, se tentarmos puxar uma vareável de dentro de uma função, vai retornar undefined, pois aquela vareável só existe dentro da função.
+
+function faltamVisitar(RestalrantesVisitados){
+  var totalRestalrantes = 25
+  return `Faltam visitar ${totalRestalrantes - RestalrantesVisitados} restalrantes.`
+}
+console.log(faltamVisitar(10))
+console.log(totalRestalrantes) // Retorna undefined pois essa vareável só existe dentro da função.
