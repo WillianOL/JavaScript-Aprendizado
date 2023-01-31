@@ -18,4 +18,8 @@ while (n <= 10) {
     n++
 }
 
-//
+//Array e loops
+var nomes = ['Willian', 'Netinho', 'André', 'Pedro']
+for (var c = 0; c <= nomes.length; c++) {
+    console.log(`Temos ${nomes.length} pessoas, ${nomes[c]}`);
+}
