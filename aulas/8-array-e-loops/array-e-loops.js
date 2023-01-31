@@ -23,3 +23,12 @@ var nomes = ['Willian', 'Netinho', 'André', 'Pedro']
 for (var c = 0; c <= nomes.length; c++) {
     console.log(`Temos ${nomes.length} pessoas, ${nomes[c]}`);
 }
+
+//Break
+var comida = ['Bolo', 'Sorvete', 'Pastel', 'Coxinha']
+for (var i = 0; i <= comida.length; i++) {
+    console.log(`Gosto de ${comida[i]}`);
+    if( comida[i] === 'Sorvete') {
+        break;
+    }
+}
