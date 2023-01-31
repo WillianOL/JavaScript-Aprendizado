@@ -7,6 +7,15 @@ celulares.push('LG'); // Adiciona o elemento no ultimo indicie
 console.log(celulares.length); // Número de elementos/itens
 
 //For loop - estrutura de repetição
-for(var contagem = 0; contagem <= 10; contagem++){
-    console.log(contagem);
+for (var contagem = 0; contagem <= 10; contagem++) {
+    console.log(`For ${contagem}`);
 } //Primeiro cria-se uma vareável de contagem, depois a condição para que o loop continue. Depois que ele executar o código, faz o incremento de +1 até que a condição seja falsa e o loop pare.
+
+//While loop
+var n = 0;
+while (n <= 10) {
+    console.log(`While ${n}`)
+    n++
+}
+
+//
