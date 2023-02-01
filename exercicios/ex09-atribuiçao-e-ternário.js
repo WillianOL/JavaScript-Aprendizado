@@ -10,5 +10,5 @@ var possuiCarro = true;
 var possuiCasa = true;
 var darCredito;
 
-var temDireito = (possuiCarro && possuiCasa) ? darCredito = true : darCredito = false
-console.log(temDireito);
+darCredito = (possuiCarro && possuiCasa)
+console.log(darCredito);
