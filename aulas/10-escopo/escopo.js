@@ -35,3 +35,8 @@ for( let c = 0; c <= 10; c++ ) {
     console.log(c);
 }
 // console.log(c); ERRO, c is not defined
+
+// const
+const nome = 'Willian';
+// nome = 'Olá'; - ERRO, não pode atribuir outro valor.
+// const sobrenome; - ERRO, declarar sem valor.
