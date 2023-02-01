@@ -40,3 +40,11 @@ for( let c = 0; c <= 10; c++ ) {
 const nome = 'Willian';
 // nome = 'Olá'; - ERRO, não pode atribuir outro valor.
 // const sobrenome; - ERRO, declarar sem valor.
+const pessoa = {
+    nome: 'Willian',
+    idade: 18,
+    cidade: 'Alagoas',
+}
+console.log(pessoa.idade);
+pessoa.idade = 19; // Assim a alteração de valores funciona.
+console.log(pessoa.idade);
