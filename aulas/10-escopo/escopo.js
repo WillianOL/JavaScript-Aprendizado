@@ -36,7 +36,7 @@ for( let c = 0; c <= 10; c++ ) {
 }
 // console.log(c); ERRO, c is not defined
 
-// const
+// const - Usar para valores que não vão ser alterados
 const nome = 'Willian';
 // nome = 'Olá'; - ERRO, não pode atribuir outro valor.
 // const sobrenome; - ERRO, declarar sem valor.
@@ -47,4 +47,14 @@ const pessoa = {
 }
 console.log(pessoa.idade);
 pessoa.idade = 19; // Assim a alteração de valores funciona.
-console.log(pessoa.idade);
+console.log(pessoa.idade); // Valor alterado
+
+// let - Usar para valores que vão ser alterados
+let pais = 'Brasil';
+pais = 'Alemanha'; // O valor pode ser modificado
+console.log(pais);
+
+let ano;
+ano = 2023;
+ano++
+console.log(ano);
