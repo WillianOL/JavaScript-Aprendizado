@@ -10,5 +10,5 @@ console.log(elemento);
 // Retorne a linguagem do navegador
 
 // Retorne a largura da janela 
-const janela = document.body.offsetWidth
+const janela = window.innerWidth
 console.log(janela);
