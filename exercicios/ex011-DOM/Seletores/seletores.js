@@ -16,4 +16,4 @@ console.log(primeiroH2);
 
 // Selecione o último p do site
 const paragrafos = document.querySelectorAll('p')
-console.log(paragrafos[paragrafos.length]);
+console.log(paragrafos[paragrafos.length - 1]);
