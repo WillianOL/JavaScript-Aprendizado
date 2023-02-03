@@ -16,6 +16,10 @@ console.log(todasGridSection);
 
 const listaHTML = document.getElementsByClassName('grid-section') // Lista atualizada ao vivo, ou seja, se um novo elemento for adicionado com a classe 'grid-section' ele vai reconhecer.
 const listaNode = document.querySelectorAll('.grid-section') //  Não é atualizada automaticamente, sendo o mesmo nomero de elemento que ele reconheceu primeiramente. 
-priemiraUL.classList.add('grid-section')
-console.log(listaHTML);
-console.log(listaNode);
+priemiraUL.classList.add('grid-section') //  Elemento adicionado com a classe 'grid-section'.
+// console.log(listaHTML);
+// console.log(listaNode);
+
+listaNode.forEach(function(item, index){
+    console.log(item, index);
+});
