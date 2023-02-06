@@ -16,4 +16,3 @@ imgNode.forEach(() => {
     console.log(contador++);
 });
 
-
