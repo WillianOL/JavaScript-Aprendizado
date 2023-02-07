@@ -14,7 +14,9 @@ menuItens[0].classList.add('ativo')
 const imagens = document.querySelectorAll('img')
 imagens.forEach((itens) => {
     const possuiAlt = itens.hasAttribute('alt')
-    console.log(possuiAlt);
+    console.log(itens, possuiAlt);
 })
 
 // Modifique o href do link externo no menu
+const menu = document.querySelector('a[href^="https://"]')
+menu.setAttribute('href', 'link-alterado')
