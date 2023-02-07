@@ -1,3 +1,7 @@
-const section = document.querySelector('.grid-section');
-const sectionAltura = section.clientHeight;
-console.log(sectionAltura);
+const listaAnimais = document.querySelector('.listaAnimais');
+
+const listaAltura = listaAnimais.clientHeight; // height + padding
+console.log(listaAltura);
+
+const listaAlturaTotal = listaAnimais.scrollHeight;
+console.log(listaAlturaTotal);
