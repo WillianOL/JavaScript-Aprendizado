@@ -17,4 +17,15 @@ if(menu.classList.contains('ativo')) {
 menu.className += ' ativado' // Adicionando diretamente usando concatenação.
 
 const animais = document.querySelector('.animais')
-console.log(animais.attributes[1]);
+console.log(animais.attributes[1]); // Retorna uma array-like, verificando seus atributos. No caso o segundo atributo
+
+const imagem = document.querySelector('img')
+const pegarAtributo = imagem.getAttribute('src') // Retorna o que está no src(atributo) da imagem.
+console.log(pegarAtributo);
+
+const imagemAtributo = imagem.setAttribute('alt', 'primaira imagem') // Define um atributo para a imagem. No caso o texto alternativo.
+
+const verificarAtributo = imagem.hasAttribute('id') // Varifica se o atributo existe. true / false
+console.log(verificarAtributo);
+
+const removerAtributo = imagem.removeAttribute('alt') // Vai remover o atributo do elemento.
