@@ -25,9 +25,9 @@ links.forEach ((link) => {
     const linkWidth = link.offsetWidth;
     const linkHeight = link.offsetHeight;
     if(linkWidth > 48 && linkHeight > 48){
-        console.log(`${link}, Tamanho está OK`);
+        console.log(link, 'Tamanho está OK');
     } else {
-        console.log(`${link}, Tamanho não está OK`);
+        console.log(link, 'Tamanho não está OK');
     }
 })
 
