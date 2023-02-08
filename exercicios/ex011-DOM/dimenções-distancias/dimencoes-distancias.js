@@ -10,10 +10,9 @@ function somaImagens(){
 
     imgs.forEach((img) => {
     soma += img.offsetWidth;
-    console.log(soma)
     });
+    console.log(`A soma de todas as imagens são ${soma}`)
 }
-
 window.onload = () =>{
     somaImagens();
 }
@@ -21,6 +20,21 @@ window.onload = () =>{
 // Verifique se os links da página possuem
 // o mínimo recomendado para telas utilizadas
 // com o dedo. (48px/48px de acordo com o google)
+const links = document.querySelectorAll('a')
+links.forEach ((link) => {
+    const linkWidth = link.offsetWidth;
+    const linkHeight = link.offsetHeight;
+    if(linkWidth > 48 && linkHeight > 48){
+        console.log(`${link}, Tamanho está OK`);
+    } else {
+        console.log(`${link}, Tamanho não está OK`);
+    }
+})
 
 // Se o browser for menor que 720px,
 // adicione a classe menu-mobile ao menu
+const telaLimite = window.matchMedia('(max-width: 720px)')
+const menu = document.querySelector('.menu')
+if (telaLimite.matches) {
+    menu.classList.add('menu-mobile')
+}
