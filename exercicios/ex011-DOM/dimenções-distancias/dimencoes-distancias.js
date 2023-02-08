@@ -4,8 +4,19 @@ const img = document.querySelector('img')
 console.log(`A distância entre o topo e a imagem é de ${img.offsetTop}px`);
 
 // Retorne a soma da largura de todas as imagens
-const imgs = document.querySelectorAll('.listaAnimais img')
+function somaImagens(){
+    let soma = 0;
+    const imgs = document.querySelectorAll('img')
 
+    imgs.forEach((img) => {
+    soma += img.offsetWidth;
+    console.log(soma)
+    });
+}
+
+window.onload = () =>{
+    somaImagens();
+}
 
 // Verifique se os links da página possuem
 // o mínimo recomendado para telas utilizadas
