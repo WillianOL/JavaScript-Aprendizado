@@ -24,7 +24,7 @@ const links = document.querySelectorAll('a')
 links.forEach ((link) => {
     const linkWidth = link.offsetWidth;
     const linkHeight = link.offsetHeight;
-    if(linkWidth > 48 && linkHeight > 48){
+    if(linkWidth >= 48 && linkHeight >= 48){
         console.log(link, 'Tamanho está OK');
     } else {
         console.log(link, 'Tamanho não está OK');
@@ -34,7 +34,8 @@ links.forEach ((link) => {
 // Se o browser for menor que 720px,
 // adicione a classe menu-mobile ao menu
 const telaLimite = window.matchMedia('(max-width: 720px)')
-const menu = document.querySelector('.menu')
+
 if (telaLimite.matches) {
+    const menu = document.querySelector('.menu')
     menu.classList.add('menu-mobile')
 }
