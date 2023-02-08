@@ -16,7 +16,8 @@ img2.addEventListener('click', clicarImagem);
 //Parâmetro
 const pagina = document.querySelector('body')
 function clicarBody(event){
-    const Y = event.
+    const clientX = event.clientX;
+    console.log(clientX);
 }
 
 pagina.addEventListener('click', clicarBody);
