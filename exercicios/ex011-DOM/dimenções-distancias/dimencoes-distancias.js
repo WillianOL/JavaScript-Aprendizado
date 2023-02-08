@@ -5,10 +5,7 @@ console.log(`A distância entre o topo e a imagem é de ${img.offsetTop}px`);
 
 // Retorne a soma da largura de todas as imagens
 const imgs = document.querySelectorAll('.listaAnimais img')
-for(c = 0; c < imgs[imgs.length]; c++){
-    const largura = imgs[c].getBoundingClientRect().width;
-    const resultado = 
-}
+
 
 // Verifique se os links da página possuem
 // o mínimo recomendado para telas utilizadas
