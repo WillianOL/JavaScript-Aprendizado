@@ -6,7 +6,7 @@ img.addEventListener('click', () => {
 
 // Callback
 //Nomear seu callback(nome da função) da maneira que quiser
-const img2 = document.querySelector('.img2')
+const img2 = document.querySelector('.img2') 
 function clicarImagem(){
     console.log('Clicou na imagem 02');
 }
