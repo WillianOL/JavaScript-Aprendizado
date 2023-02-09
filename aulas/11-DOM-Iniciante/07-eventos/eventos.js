@@ -32,8 +32,18 @@ listaAnimais.addEventListener('click', cliqueLista);
 const linkExterno = document.querySelector('a[href^="https"]')
 
 function linkExternof(event){
-    event.preventDefault(); // Vai previnir o padrão do evento. Fazendo assim a ação não ocorrer.
+    event.preventDefault(); // Vai previnir o comportamento padrão do evento. Fazendo não acontecer ele. No caso do link externo, não irá funcionar.
     console.log(event);
 }
 
 linkExterno.addEventListener('click', linkExternof)
+
+// This
+const img3 = document.querySelector('img');
+
+function thisImagem(){
+    console.log(this); // Vai retornar a imagem.
+    console.log(this.getAttribute('src'));
+}
+
+img3.addEventListener('click', thisImagem)
