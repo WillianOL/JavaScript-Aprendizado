@@ -66,3 +66,14 @@ h1.addEventListener('mouseenter', eventoAleatorio); // Mouse entrar no elemento
 h1.addEventListener('mouseleave', eventoAleatorio); // Mouse sair do elemento
 window.addEventListener('keydown', eventoAleatorio); // Evento de tecla.
 window.addEventListener('scroll', eventoAleatorio); // Evento de scroll
+
+// forEach e eventos
+const listaImg2 = document.querySelectorAll('img')
+
+function clicouImagem(){
+    console.log('Clicou na imagem 001');
+}
+
+listaImg2.forEach((imgs) =>{
+    imgs.addEventListener('click', clicouImagem)
+})
