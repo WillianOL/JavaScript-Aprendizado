@@ -22,21 +22,21 @@ function clicarBody(event){
 
 pagina.addEventListener('click', clicarBody);
 
-const listaAnimais = document.querySelector('.listaAnimais')
+const listaAnimais = document.querySelector('.listaAnimais');
 function cliqueLista(lista) {
     console.log(lista.target);
 }
 
 listaAnimais.addEventListener('click', cliqueLista);
 
-const linkExterno = document.querySelector('a[href^="https"]')
+const linkExterno = document.querySelector('a[href^="https"]');
 
 function linkExternof(event){
     event.preventDefault(); // Vai previnir o comportamento padrão do evento. Fazendo não acontecer ele. No caso do link externo, não irá funcionar.
     console.log(event);
 }
 
-linkExterno.addEventListener('click', linkExternof)
+linkExterno.addEventListener('click', linkExternof);
 
 // This
 const img3 = document.querySelector('img');
@@ -46,24 +46,23 @@ function thisImagem(){
     console.log(this.getAttribute('src'));
 }
 
-img3.addEventListener('click', thisImagem)
+img3.addEventListener('click', thisImagem);
 
 // Outros eventos
-const siteBackground = document.querySelector('body')
-const h1 = document.querySelector('h1')
+const h1 = document.querySelector('h1');
 
 function eventoAleatorio(evento) {
     console.log(evento.type);
     console.log(evento);
 
     if(evento.key === 'a'){ // Quando for pressionado a tecla 'a' do teclado, vai trocar o background pra vermelho
-        siteBackground.style.backgroundColor = 'red'
+        document.body.style.backgroundColor = 'pink'
     } else if(evento.key === 'b'){ // Quando for pressionado 'b', vai trocar o background pra branco.
-        siteBackground.style.backgroundColor = 'white'
+        document.body.style.backgroundColor = 'white'
     }
 }
 
-h1.addEventListener('mouseenter', eventoAleatorio) // Mouse entrar no elemento
-h1.addEventListener('mouseleave', eventoAleatorio) // Mouse sair do elemento
+h1.addEventListener('mouseenter', eventoAleatorio); // Mouse entrar no elemento
+h1.addEventListener('mouseleave', eventoAleatorio); // Mouse sair do elemento
 window.addEventListener('keydown', eventoAleatorio); // Evento de tecla.
-window.addEventListener('scroll', eventoAleatorio) // Evento de scroll
+window.addEventListener('scroll', eventoAleatorio); // Evento de scroll
