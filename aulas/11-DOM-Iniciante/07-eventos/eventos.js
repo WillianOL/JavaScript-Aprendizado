@@ -13,7 +13,7 @@ function clicarImagem(){
 
 img2.addEventListener('click', clicarImagem);
 
-//Parâmetro
+//Parâmetros
 const pagina = document.querySelector('body')
 function clicarBody(event){
     const clientX = event.clientX; // Com esse parâmetro, vai puxar exatamente onde ocorreu o clique em relação ao eixo X.
@@ -28,3 +28,12 @@ function cliqueLista(lista) {
 }
 
 listaAnimais.addEventListener('click', cliqueLista);
+
+const linkExterno = document.querySelector('a[href^="https"]')
+
+function linkExternof(event){
+    event.preventDefault(); // Vai previnir o padrão do evento. Fazendo assim a ação não ocorrer.
+    console.log(event);
+}
+
+linkExterno.addEventListener('click', linkExternof)
