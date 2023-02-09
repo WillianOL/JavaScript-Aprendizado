@@ -16,8 +16,15 @@ img2.addEventListener('click', clicarImagem);
 //Parâmetro
 const pagina = document.querySelector('body')
 function clicarBody(event){
-    const clientX = event.clientX;
+    const clientX = event.clientX; // Com esse parâmetro, vai puxar exatamente onde ocorreu o clique em relação ao eixo X.
     console.log(clientX);
 }
 
 pagina.addEventListener('click', clicarBody);
+
+const listaAnimais = document.querySelector('.listaAnimais')
+function cliqueLista(lista) {
+    console.log(lista.target);
+}
+
+listaAnimais.addEventListener('click', cliqueLista);
