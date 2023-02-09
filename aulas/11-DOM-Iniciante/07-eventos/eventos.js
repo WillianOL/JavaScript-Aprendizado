@@ -49,13 +49,17 @@ function thisImagem(){
 img3.addEventListener('click', thisImagem)
 
 // Outros eventos
+const siteBackground = document.querySelector('body')
 const h1 = document.querySelector('h1')
+
 function eventoAleatorio(evento) {
     console.log(evento.type);
     console.log(evento);
 
-    if(evento.key === 'a'){
-        console.log('Clicou em A');
+    if(evento.key === 'a'){ // Quando for pressionado a tecla 'a' do teclado, vai trocar o background pra vermelho
+        siteBackground.style.backgroundColor = 'red'
+    } else if(evento.key === 'b'){ // Quando for pressionado 'b', vai trocar o background pra branco.
+        siteBackground.style.backgroundColor = 'white'
     }
 }
 
