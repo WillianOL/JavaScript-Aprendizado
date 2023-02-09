@@ -47,3 +47,19 @@ function thisImagem(){
 }
 
 img3.addEventListener('click', thisImagem)
+
+// Outros eventos
+const h1 = document.querySelector('h1')
+function eventoAleatorio(evento) {
+    console.log(evento.type);
+    console.log(evento);
+
+    if(evento.key === 'a'){
+        console.log('Clicou em A');
+    }
+}
+
+h1.addEventListener('mouseenter', eventoAleatorio) // Mouse entrar no elemento
+h1.addEventListener('mouseleave', eventoAleatorio) // Mouse sair do elemento
+window.addEventListener('keydown', eventoAleatorio); // Evento de tecla.
+window.addEventListener('scroll', eventoAleatorio) // Evento de scroll
