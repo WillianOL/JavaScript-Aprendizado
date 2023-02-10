@@ -12,3 +12,9 @@ console.log(ex05);
 const ex06 = document.querySelectorAll('li')
 const ex07 = document.querySelector('li:last-child')
 console.log(ex07);
+
+// Manipular elementos
+const faq = document.getElementById('faq')
+const tituloFaq = faq.querySelector('.titulo')
+faq.appendChild(listaAnimais); // Vai mover a lista de animais para o final de faq
+faq.insertBefore(listaAnimais, tituloFaq);
