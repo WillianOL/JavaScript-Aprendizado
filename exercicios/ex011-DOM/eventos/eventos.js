@@ -19,12 +19,12 @@ linksInternos.forEach((links) => {
 
 // Selecione todos os elementos do site começando a partir do body,
 // ao clique mostre exatamente quais elementos estão sendo clicados
-
 function cliqueAleatorio(event){
-    const clique = event.target
-    console.log(clique);
+    const cliqueItem = event.target
+    console.log(cliqueItem);
 }
-window.addEventListener('click', cliqueAleatorio)
+
+document.body.addEventListener('click', cliqueAleatorio)
 
 // Utilizando o código anterior, ao invés de mostrar no console,
 // remova o elemento que está sendo clicado, o método remove() remove um elemento
