@@ -9,7 +9,6 @@ function clicouLink(event) {
     linksInternos.forEach((itens) => {
         itens.classList.remove('ativo')
     })
-
     event.target.classList.toggle('ativo')
 }
 
