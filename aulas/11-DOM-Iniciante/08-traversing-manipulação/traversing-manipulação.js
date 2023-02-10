@@ -18,3 +18,4 @@ const faq = document.getElementById('faq')
 const tituloFaq = faq.querySelector('.titulo')
 faq.appendChild(listaAnimais); // Vai mover a lista de animais para o final de faq
 faq.insertBefore(listaAnimais, tituloFaq);
+faq.removeChild(tituloFaq);
