@@ -20,3 +20,11 @@ faq.appendChild(listaAnimais); // Vai mover a lista de animais para o final de f
 faq.insertBefore(listaAnimais, tituloFaq); // Vai mover a listaAnimais para antes do tituloFaq
 // faq.removeChild(tituloFaq); // Remove o titulo
 faq.replaceChild(listaAnimais, tituloFaq) // substitui o titulo pela lista de animais
+
+//Criar novos elementos
+const contato = document.querySelector('#contato');
+
+const novoTitulo = document.createElement('h1');
+novoTitulo.classList.add('titulo');
+
+contato.appendChild(novoTitulo)
