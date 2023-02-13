@@ -147,6 +147,10 @@ body{
     margin-left: 30px;
 }
 
+.animais{
+    display: none;
+}
+
 .mapa{
     grid-column: 2;
 }
