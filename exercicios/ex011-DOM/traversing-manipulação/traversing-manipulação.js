@@ -13,7 +13,7 @@ const primeiroTitulo = faq.querySelector('h2');
 console.log(primeiroTitulo);
 
 // Selecione o DD referente ao primeiro DT
-const primeiroP = faq.querySelector('p')
+const primeiroP = primeiroTitulo.nextElementSibling;
 console.log(primeiroP);
 
 // Substitua o conteúdo html de .faq pelo de .animais
