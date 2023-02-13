@@ -1,13 +1,13 @@
-const animaisLista = document.querySelectorAll('.js-listaAnimais img');
-const descricaoAnimais = document.querySelector('.js-descricao-tabs');
+const menuTab = document.querySelectorAll('.js-listaAnimais li');
+const descricaoAnimais = document.querySelector('.js-descricao-tabs section');
+const sectionAnimais = document.querySelector('.animais');
 
 
 function clicouImagem(event){
-    const evento = event.target
-    
+    console.log(event.target);
 }
 
-animaisLista.forEach((item) => {
+menuTab.forEach((item) => {
     item.addEventListener('click', clicouImagem)
 });
 
