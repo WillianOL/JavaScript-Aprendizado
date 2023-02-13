@@ -17,8 +17,7 @@ const primeiroP = primeiroTitulo.nextElementSibling;
 console.log(primeiroP);
 
 // Substitua o conteúdo html de .faq pelo de .animais
-const faq2 = document.getElementById('faq')
-const animais = document.querySelector('.descricaoAnimais');
-const contentFaq = document.querySelector('.fagAnimais');
+const faq2 = document.getElementById('faq');
+const animais = document.querySelector('.animais')
 
-faq2.replaceChild(animais, contentFaq);
+faq2.innerHTML = animais.innerHTML;
