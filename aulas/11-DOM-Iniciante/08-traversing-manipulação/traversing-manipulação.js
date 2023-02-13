@@ -22,9 +22,10 @@ faq.insertBefore(listaAnimais, tituloFaq); // Vai mover a listaAnimais para ante
 faq.replaceChild(listaAnimais, tituloFaq) // substitui o titulo pela lista de animais
 
 //Criar novos elementos
-const contato = document.querySelector('#contato');
+const mapa = document.querySelector('.mapa');
 
-const novoTitulo = document.createElement('h1');
-novoTitulo.classList.add('titulo');
+const novoTitulo = document.createElement('h1'); // Cria o elemento
+novoTitulo.innerText = 'Novo titulo' // Insere o texto nele
+novoTitulo.classList.add('titulo'); // Adiciona a classe
 
-contato.appendChild(novoTitulo)
+contato.appendChild(novoTitulo); // Adiciona no documento
