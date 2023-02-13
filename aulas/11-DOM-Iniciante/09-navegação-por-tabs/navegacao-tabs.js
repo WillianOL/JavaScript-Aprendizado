@@ -1,7 +1,11 @@
 const menuTab = document.querySelectorAll('.js-listaAnimais li');
-const descricaoAnimais = document.querySelector('.js-descricao-tabs section');
-const sectionAnimais = document.querySelector('.animais');
+const descricaoAnimais = document.querySelectorAll('.js-descricao-tabs section');
 
 function ativarDescricao(index){
-    descricaoAnimais[index].classList.add('ativado')
+    menuTab.forEach((itens) => {
+        itens.classList.remove('ativo');
+    });
+
+    descricaoAnimais[index].classList.add('ativado');
 }
+
