@@ -29,3 +29,10 @@ novoTitulo.innerText = 'Novo titulo' // Insere o texto nele
 novoTitulo.classList.add('titulo'); // Adiciona a classe
 
 contato.appendChild(novoTitulo); // Adiciona no documento
+
+//Clonar elementos
+const contatoTitulo = contato.querySelector('.titulo');
+
+const cloneTitulo = contatoTitulo.cloneNode(true);
+cloneTitulo.classList.add('vermelho')
+contatoTitulo.appendChild(cloneTitulo)
