@@ -155,7 +155,7 @@ body{
 
 .ativado{
     display: block;
-    animation: show 0.5s forwards;
+    animation: show 0.7s ease forwards;
 }
 
 @keyframes show{
