@@ -158,11 +158,7 @@ body{
     animation: show 0.7s ease forwards;
 }
 
-.js-showAnimais p {
-    display: none;
-}
-
-.showP{
+.fagAnimais p.showP{
     display: block;
     animation: show 0.7s ease forwards;
 }
@@ -171,11 +167,12 @@ body{
 @keyframes show{
     from{
         opacity: 0;
+        max-height: 0;
         transform: translate(-100px);
-        height: 0px;
     }
 
     to{
+        max-height: 200px;
         opacity: 1;
     }
 }

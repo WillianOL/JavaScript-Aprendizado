@@ -21,12 +21,18 @@ function initDescricao(){
 }
 initDescricao();
 
-const faqBtns = document.querySelectorAll('.js-showAnimais h2');
+function initInfo() {
+    const faqBtns = document.querySelectorAll('.js-showAnimais h2');
+    faqBtns[0].classList.add('showP');
+    faqBtns[0].nextElementSibling.classList.add('showP');
 
-function mostrarInfoFaq(){
+    function mostrarInfoFaq(){
     this.nextElementSibling.classList.toggle('showP')
-}
+    }
 
-faqBtns.forEach((item) => {
+    faqBtns.forEach((item) => {
     item.addEventListener('click', mostrarInfoFaq);
-})
+    })
+}
+initInfo();
+
