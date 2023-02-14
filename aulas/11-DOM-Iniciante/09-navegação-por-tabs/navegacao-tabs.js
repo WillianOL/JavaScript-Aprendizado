@@ -21,6 +21,12 @@ function initDescricao(){
 }
 initDescricao();
 
-const titulos = document.querySelectorAll('.fagAnimais h2');
-console.log(titulos);
+const faqBtns = document.querySelectorAll('.js-showAnimais h2');
 
+function mostrarInfoFaq(){
+    this.nextElementSibling.classList.toggle('showP')
+}
+
+faqBtns.forEach((item) => {
+    item.addEventListener('click', mostrarInfoFaq);
+})
