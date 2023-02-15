@@ -38,4 +38,16 @@ function initInfo() {
 initInfo();
 
 const menuLinks = document.querySelectorAll('.menu-js a[href^="#"]');
-console.log(menuLinks);
+
+function scrollParaSection(event) {
+    event.preventDefault()
+    const link = event.target.getAttribute('href')
+    const section = document.querySelector(link)
+    const elementPosition = section.offsetTop;
+
+    window.scrollTo(0, elementPosition);
+}
+
+menuLinks.forEach((links) => {
+    links.addEventListener('click', scrollParaSection)
+});
