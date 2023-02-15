@@ -37,5 +37,5 @@ function initInfo() {
 }
 initInfo();
 
-const menuLinks = document.querySelectorAll('.menu-js a');
-console.log(menuLinksx);
+const menuLinks = document.querySelectorAll('.menu-js a[href^="#"]');
+console.log(menuLinks);
