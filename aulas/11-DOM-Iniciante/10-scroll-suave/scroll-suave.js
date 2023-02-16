@@ -40,16 +40,16 @@ initInfo();
 const menuLinks = document.querySelectorAll('.menu-js a[href^="#"]');
 
 function scrollParaSection(event) {
-    event.preventDefault()
-    const link = event.target.getAttribute('href')
-    const section = document.querySelector(link)
+    event.preventDefault();
+    const link = event.target.getAttribute('href');
+    const section = document.querySelector(link);
     const elementPosition = section.offsetTop;
 
     section.scrollIntoView({
         behavior: 'smooth',
-    })
+    });
 }
 
 menuLinks.forEach((links) => {
-    links.addEventListener('click', scrollParaSection)
+    links.addEventListener('click', scrollParaSection);
 });
