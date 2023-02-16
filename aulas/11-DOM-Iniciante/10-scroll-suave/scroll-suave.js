@@ -37,19 +37,19 @@ function initInfo() {
 }
 initInfo();
 
-const menuLinks = document.querySelectorAll('.menu-js a[href^="#"]');
+const menuLinks = document.querySelectorAll('.menu-js a[href^="#"]'); // Selecionando todos os links internos.
 
 function scrollParaSection(event) {
-    event.preventDefault();
-    const link = event.target.getAttribute('href');
+    event.preventDefault(); // Desabilitando o comportamento padrão do link interno.
+    const link = event.target.getAttribute('href'); // Pegando o atributo href dos links.
     const section = document.querySelector(link);
-    const elementPosition = section.offsetTop;
+    console.log(section);
 
-    section.scrollIntoView({
+    section.scrollIntoView({ // Vai dar o scroll até 
         behavior: 'smooth',
     });
 }
 
-menuLinks.forEach((links) => {
+menuLinks.forEach((links) => { // Adicionando a função de click em casa a.
     links.addEventListener('click', scrollParaSection);
 });
