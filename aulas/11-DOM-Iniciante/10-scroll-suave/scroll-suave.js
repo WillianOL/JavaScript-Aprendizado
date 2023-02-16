@@ -45,7 +45,9 @@ function scrollParaSection(event) {
     const section = document.querySelector(link)
     const elementPosition = section.offsetTop;
 
-    window.scrollTo(0, elementPosition);
+    section.scrollIntoView({
+        behavior: 'smooth',
+    })
 }
 
 menuLinks.forEach((links) => {
