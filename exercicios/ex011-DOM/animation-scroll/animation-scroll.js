@@ -56,15 +56,17 @@ function iniScrollSuave() {
 }
 iniScrollSuave();
 
+function initAnimationScroll() {
+    const sections = document.querySelectorAll('section');
 
-const sections = document.querySelectorAll('section');
+    function animationScroll() {
+        sections.forEach((section) => {
+            const topSection = section.getBoundingClientRect().top - 500;
+            if(topSection < 0) {
+                section.classList.add('animationSection')
+            }
+        })
+    }
 
-function animationScroll(event) {
-    sections.forEach((section) => {
-        
-    })
+    window.addEventListener('scroll', animationScroll)
 }
-
-sections.forEach((section) => {
-    section.addEventListener('scroll', animationScroll)
-});
