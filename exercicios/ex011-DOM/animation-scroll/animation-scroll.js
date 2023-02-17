@@ -58,6 +58,7 @@ iniScrollSuave();
 
 function initAnimationScroll() {
     const sections = document.querySelectorAll('section'); // Selecionando tudas as sections
+    sections[0].classList.add('animationSection');
 
     function animationScroll() {
         sections.forEach((section) => {
@@ -69,3 +70,4 @@ function initAnimationScroll() {
     }
     window.addEventListener('scroll', animationScroll)
 }
+initAnimationScroll();
