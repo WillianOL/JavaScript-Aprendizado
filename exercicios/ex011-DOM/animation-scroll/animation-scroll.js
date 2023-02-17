@@ -57,16 +57,15 @@ function iniScrollSuave() {
 iniScrollSuave();
 
 function initAnimationScroll() {
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll('section'); // Selecionando tudas as sections
 
     function animationScroll() {
         sections.forEach((section) => {
-            const topSection = section.getBoundingClientRect().top - 500;
-            if(topSection < 0) {
+            const topSection = section.getBoundingClientRect().top - 500; // Pegando o topo de cada section -500 para aumentar a distancia de contato
+            if(topSection < 0) { // O topo for < que 0, adicionar a classe da animação
                 section.classList.add('animationSection')
             }
         })
     }
-
     window.addEventListener('scroll', animationScroll)
 }
