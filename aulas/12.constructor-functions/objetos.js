@@ -36,6 +36,7 @@ function PrecoProduto(marcaAt, precoInicial) {
     const taxa = 1.3
     const precoFinal = precoInicial * taxa
     const desconto = precoInicial * 0.5
+    // O que realmente vai para o objeto são os qu estão com o this.
     this.marca = marcaAt;
     this.preco = precoFinal - desconto
 }
