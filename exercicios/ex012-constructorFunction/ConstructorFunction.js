@@ -25,14 +25,17 @@ function Pessoa(nome, idade) {
   // removeClass(classe), remove a classe a todos os elementos
 
 function Dom(seletor, classe) {
-    this.elements = function() {
-        return document.querySelectorAll(seletor)
-    }
-
-    this.AddClass = function() {
-        this.elements.foreach((itens) => {
+    const listaElements = document.querySelectorAll(seletor);
+    this.elements = listaElements;
+    this.addClass = function(){
+            listaElements.forEach((itens) => {
             itens.classList.add(classe)
         })
+    }
+    this.removeClass = function() {
+        listaElements.forEach(itens => {
+            itens.classList.remove(classe)
+        }) 
     }
 }
 
