@@ -29,3 +29,5 @@ function Pessoa(nomeAt, idadeAt) {
     this.idade = idadeAt;
 }
 
+const pessoa01 = new Pessoa('Pedro', 18);
+const pessoa02 = new Pessoa('Sophya', 19);
