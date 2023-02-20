@@ -10,12 +10,15 @@ console.log(fiat);
 
 // Constructor function
 function Carro() { // Iniciar constructor functions com letras maiúscolas (pascal case)
+    this.marca = 'not brand'
+    this.preco = 0
+    console.log(this);
 }
 
-const honda = new Carro();  
+const honda = new Carro(); // Utilizando o "new" pode-se atribuir novos valores ao objeto e reutiliza-los
 honda.marca = 'Honda';
 honda.preco = 50000;
 
-const ferrari = new Carro();
+const ferrari = new Carro(); // Atribuindo novos valores as suas propriedades sem alterar as anteriores.
 ferrari.marca = 'Ferrari'
 ferrari.preco = 100000
