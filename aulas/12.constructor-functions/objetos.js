@@ -22,3 +22,10 @@ honda.preco = 50000;
 const ferrari = new Carro(); // Atribuindo novos valores as suas propriedades sem alterar as anteriores.
 ferrari.marca = 'Ferrari'
 ferrari.preco = 100000
+
+// Com parâmetros
+function Pessoa(nomeAt, idadeAt) {
+    this.nome = nomeAt;
+    this.idade = idadeAt;
+}
+
