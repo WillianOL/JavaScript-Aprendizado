@@ -31,3 +31,13 @@ function Pessoa(nomeAt, idadeAt) {
 
 const pessoa01 = new Pessoa('Pedro', 18);
 const pessoa02 = new Pessoa('Sophya', 19);
+
+function PrecoProduto(marcaAt, precoInicial) {
+    const taxa = 1.3
+    const precoFinal = precoInicial * taxa
+    const desconto = precoInicial * 0.5
+    this.marca = marcaAt;
+    this.preco = precoFinal - desconto
+}
+
+const calca = new PrecoProduto('Gucci', 200)
