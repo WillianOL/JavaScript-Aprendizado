@@ -9,7 +9,6 @@ function Pessoa(nome, idade) {
 
   const pessoa = new Pessoa('Willian', 18);
 
-  
   // Crie 3 pessoas, João - 20 anos,
   // Maria - 25 anos, Bruno - 15 anos
   const pessoa01 = new Pessoa('João', 20)
@@ -23,7 +22,6 @@ function Pessoa(nome, idade) {
   // elements, retorna NodeList com os elementos selecionados
   // addClass(classe), adiciona a classe a todos os elementos
   // removeClass(classe), remove a classe a todos os elementos
-
 function Dom(seletor, classe) {
     const listaElements = document.querySelectorAll(seletor);
     this.elements = listaElements;
