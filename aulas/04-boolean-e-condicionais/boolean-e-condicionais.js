@@ -25,7 +25,7 @@ if( idade >= 18){ // False
 } else{
   console.log("Criança");
 }
-//Vai executar else pois nenhuma das condições foram verdadeira
+//Vai executar else pois nenhuma das condições foram verdadeiras
 
 //Truthy e Falsy
 //Valores booleanos verdadeiros e falsos.
@@ -88,7 +88,6 @@ if(possuiFaculdade){
 
 //Switch
 var cabelo = 'Cacheado'
-
 switch(cabelo){
   case 'Liso':
     console.log('Seu cabelo é liso')

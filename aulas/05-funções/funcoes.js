@@ -29,11 +29,11 @@ function GostoColinario(comidaFavorita){
 }
 console.log(GostoColinario('Lasanha'))
 
-// Argumentos é funções
+// Argumentos e funções
 //Pode-se criar funções a partir de eventos da Web. Chamadas de Callback.
   addEventListener('click', function(){
     console.log('Clicou!')
-  }) // Evento de click e fução anônima.
+  }) // Evento de click e função anônima.
 
 function imc2(peso, altura){
   var result = peso / (altura ** 2)
@@ -55,7 +55,7 @@ function verificarIdade(idade){
 console.log(verificarIdade(60))
 
 //Escopo
-//Vareáveis e funções definidas em funções só existem dentro delas. Ou seja, se tentarmos puxar uma vareável de dentro de uma função, vai retornar undefined, pois aquela vareável só existe dentro da função.
+//Vareáveis e funções definidas em funções só existem dentro delas. Ou seja, se tentarmos puxar uma vareável de dentro de uma função, vai retornar undefined, pois aquela vareável só existe dentro do escopo da função.
 
 function faltamVisitar(RestalrantesVisitados){
   var totalRestalrantes = 25

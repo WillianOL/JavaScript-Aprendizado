@@ -39,7 +39,6 @@ initInfo();
 
 function iniScrollSuave() {
     const menuLinks = document.querySelectorAll('.menu-js a[href^="#"]'); // Selecionando todos os links internos.
-
     function scrollParaSection(event) {
         event.preventDefault(); // Desabilitando o comportamento padrão do link interno.
         const link = event.target.getAttribute('href'); // Pegando o atributo href dos links.
@@ -63,7 +62,7 @@ function initAnimationScroll() {
     function animationScroll() {
         sections.forEach((section) => {
             const topSection = section.getBoundingClientRect().top - 500; // Pegando o topo de cada section -500 para aumentar a distancia de contato
-            if(topSection < 0) { // O topo for < que 0, adicionar a classe da animação
+            if(topSection < 0) { // Se topo for < que 0, adicionar a classe da animação
                 section.classList.add('animationSection')
             }
         })

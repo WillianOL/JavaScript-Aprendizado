@@ -20,8 +20,8 @@ honda.marca = 'Honda';
 honda.preco = 50000;
 
 const ferrari = new Carro(); // Atribuindo novos valores as suas propriedades sem alterar as anteriores.
-ferrari.marca = 'Ferrari'
-ferrari.preco = 100000
+ferrari.marca = 'Ferrari';
+ferrari.preco = 100000;
 
 // Com parâmetros
 function Pessoa(nomeAt, idadeAt) {
@@ -41,7 +41,7 @@ function PrecoProduto(marcaAt, precoInicial) {
     this.preco = precoFinal - desconto
 }
 
-const calca = new PrecoProduto('Gucci', 200)
+const calca = new PrecoProduto('Gucci', 200);
 
 //Exemplo de web real
 function Dom(element){ // Função construtora
