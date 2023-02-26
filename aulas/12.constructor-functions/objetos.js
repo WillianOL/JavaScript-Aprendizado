@@ -5,13 +5,13 @@ const carro = {
 
 const fiat = carro;
 fiat.marca = 'Fiat';
-fiat.preco = 40000; // Dessa forma, a constante vai substituir os valores do objeto carro. Não dando para reaproveitar ele.
+fiat.preco = 40000; // Dessa forma, a constante vai modificar os valores do objeto carro. Assim apenas substituindo seus valores, e não reaproveitando eles.
 console.log(fiat);
 
 // Constructor function
 function Carro() { // Iniciar constructor functions com letras maiúscolas (pascal case)
-    this.marca = 'not brand'
-    this.preco = 0
+    this.marca;
+    this.preco;
     console.log(this);
 }
 
@@ -36,12 +36,12 @@ function PrecoProduto(marcaAt, precoInicial) {
     const taxa = 1.3
     const precoFinal = precoInicial * taxa
     const desconto = precoInicial * 0.5
-    // O que realmente vai para o objeto são os qu estão com o this.
+    // O que realmente vai para o objeto são os que estão com o this.
     this.marca = marcaAt;
     this.preco = precoFinal - desconto
 }
-
 const calca = new PrecoProduto('Gucci', 200);
+console.log(calca)
 
 //Exemplo de web real
 function Dom(element){ // Função construtora
@@ -49,7 +49,7 @@ function Dom(element){ // Função construtora
         return document.querySelector(element);
     }
     this.ativar = function (){ // Adiciona a classe ativar ao elemento passado no objeto
-        this.seletor().classList.add('ativar')     
+        this.seletor().classList.toggle('ativar')    
     }
 }
 
