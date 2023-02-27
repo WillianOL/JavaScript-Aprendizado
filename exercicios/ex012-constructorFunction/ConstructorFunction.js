@@ -1,4 +1,12 @@
 // Transforme o objeto abaixo em uma Constructor Function
+const pessoa = {
+    nome: 'Nome pessoa',
+    idade: 0,
+    andar() {
+      console.log(this.nome + ' andou');
+    }
+  }
+
 function Pessoa(){
     this.nome = 'Nome pessoa'
     this.idade = 0
@@ -22,7 +30,17 @@ function Pessoa(){
   // removeClass(classe), remove a classe a todos os elementos
 
   function Dom(element){
-    return document.querySelector(element);
+    this.elements = document.querySelectorAll(element);
+    this.AddClass = () => {
+        this.elements.forEach((itens) => {
+            itens.classList.add('classe')
+        })
+    }
+    this.removeClass = () => {
+        this.elements.forEach((itens) => {
+            itens.classList.remove('classe')
+        })
+    }
   }
 
-  const lista = new Dom('ul')
+  const lista = new Dom('li')
