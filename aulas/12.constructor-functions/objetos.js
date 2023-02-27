@@ -48,10 +48,11 @@ function Dom(element){ // Função construtora
     this.seletor = function (){ // retornar o elemento passado no objeto. 
         return document.querySelector(element);
     }
-    this.ativar = function (){ // Adiciona a classe ativar ao elemento passado no objeto
-        this.seletor().classList.toggle('ativar')    
+    this.ativar = function (classe){ // Adiciona a classe ativar ao elemento passado no objeto
+        this.seletor().classList.add(classe)
     }
 }
 
 const div = new Dom('div'); // O argumento passado no objeto vai se relacionar com a função construtora acima.
 const p = new Dom('p');
+p.ativar('ativado'); // Argumento para o parâmetro da função
