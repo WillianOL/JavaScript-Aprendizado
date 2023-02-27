@@ -20,9 +20,9 @@ const pessoa1 = new Pessoa('Willian', 18)
   
 // Crie 3 pessoas, João - 20 anos,
 // Maria - 25 anos, Bruno - 15 anos
-const pessoa01 = {nome: 'João', idade: 20,}
-const pessoa02 = {nome: 'Maria', idade: 25,}
-const pessoa03 = {nome: 'Bruno', idade: 15,}
+const pessoa01 = new Pessoa('João', 20);
+const pessoa02 = new Pessoa('Maria', 25);
+const pessoa03 = new Pessoa('Bruno', 15);
 
 // Crie uma Constructor Function (Dom) para manipulação
 // de listas de elementos do dom. Deve conter as seguintes
@@ -34,14 +34,14 @@ const pessoa03 = {nome: 'Bruno', idade: 15,}
 
 function Dom(element){
 this.elements = document.querySelectorAll(element);
-this.AddClass = () => {
+this.AddClass = (classe) => {
     this.elements.forEach((itens) => {
-        itens.classList.add('classe')
+        itens.classList.add(classe)
     })
 }
-this.removeClass = () => {
+this.removeClass = (classe) => {
     this.elements.forEach((itens) => {
-        itens.classList.remove('classe')
+        itens.classList.remove(classe)
     })
 }
 }
