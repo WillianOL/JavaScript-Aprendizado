@@ -15,6 +15,7 @@ function Pessoa(nome, idade){
     }
 }
 
+const pessoa1 = new Pessoa('Willian', 18)
 
   
 // Crie 3 pessoas, João - 20 anos,
