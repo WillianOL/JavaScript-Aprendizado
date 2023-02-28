@@ -6,7 +6,7 @@ function Bolo(saborAt, precoAt) {
 const carro01 = new Bolo('Morango', 60)
 
 console.log(carro01.prototype); // undefined, pois carro01 é um objeto e não uma função
-console.log(Bolo.prototype); // Retorna o objeto
+console.log(Bolo.prototype); // Retorna o objeto, pois é uma função
 
 // Com prototype
 function Pessoa(nomeAt, idadeAt){
@@ -22,4 +22,4 @@ Pessoa.prototype.anos = function (){
     return `${this.nome} tem ${this.idade} anos`
 }
 
-const willian = new Pessoa('Willian', 18)
+const willian = new Pessoa('Willian', 18) // Esse objeto tem acesso as propriedades criadas com o prototype
