@@ -22,4 +22,4 @@ Pessoa.prototype.anos = function (){
     return `${this.nome} tem ${this.idade} anos`
 }
 
-const willian = new Pessoa('Willian', 18) // Esse objeto tem acesso as propriedades criadas com o prototype.
+const willian = new Pessoa('Willian', 18) // Esse objeto tem ACESSO as propriedades criadas com o prototype.
