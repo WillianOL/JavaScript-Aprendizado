@@ -14,7 +14,7 @@ function Pessoa(nomeAt, idadeAt){
     this.idade = idadeAt;
 }
 
-Pessoa.prototype.andar = function (){ // Como se estivesse adicionando uma nova propriedade a constructor function.
+Pessoa.prototype.andar = function (){ // Como se estivesse adicionando uma nova propriedade a constructor function. Mas elas não são adicionadas diretamente a função.
     return this.nome + ' andou'
 }
 
@@ -22,4 +22,4 @@ Pessoa.prototype.anos = function (){
     return `${this.nome} tem ${this.idade} anos`
 }
 
-const willian = new Pessoa('Willian', 18) // Esse objeto tem acesso as propriedades criadas com o prototype
+const willian = new Pessoa('Willian', 18) // Esse objeto tem acesso as propriedades criadas com o prototype.
