@@ -14,7 +14,7 @@ function Pessoa(nomeAt, idadeAt){
     this.idade = idadeAt;
 }
 
-Pessoa.prototype.andar = function (){ // Como se estivesse adicionando uma nova propriedade a constructor function. Mas elas não são adicionadas diretamente a função.
+Pessoa.prototype.andar = function (){ // Como se estivesse adicionando um novo método a constructor function. Mas elas não são adicionadas diretamente ao objeto.
     return this.nome + ' andou'
 }
 
