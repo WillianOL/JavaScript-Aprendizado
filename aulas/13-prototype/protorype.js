@@ -25,4 +25,10 @@ Pessoa.prototype.anos = function (){
 const willian = new Pessoa('Willian', 18) // Esse objeto tem ACESSO as propriedades criadas com o prototype.
 
 const marca = new String('LG');
-const nome = 'João'; // Vai herdar os métodos e propriedades do objeto String, mesmo sem receber ele diretamente. 
+const nome = 'João'; // Vai herdar os métodos e propriedades do objeto String, mesmo sem receber ele diretamente.
+
+// * Boa prática é usar o .prototype em um objeto para ver seus métodos e propriedades. *
+console.log(String.prototype)
+
+const listaTeste = document.querySelectorAll('li');
+const array = Array.from(listaTeste);
