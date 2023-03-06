@@ -17,7 +17,7 @@ const Pessoa = {
 
 // ECMA --> Organização criada com o intuito de estabelecer um padrão de tecnologias. ECMAScript é o padão do JavaScript
 
-// Verificar se um método existe
+// Verificar se um método existe no browser
 if(typeof Array.from !== 'undefined') {
     console.log('Método existe.');
 } else {
