@@ -14,3 +14,5 @@ const Pessoa = {
     nome: 'Willian',
     idade: 18,
 }
+
+// ECMA --> 
