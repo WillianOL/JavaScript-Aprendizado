@@ -9,4 +9,8 @@ Function;
 HTMLCollection;
 NodeList;
 
-//User
+// User são objetos do usuário
+const Pessoa = {
+    nome: 'Willian',
+    idade: 18,
+}
