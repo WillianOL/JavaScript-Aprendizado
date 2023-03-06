@@ -34,4 +34,4 @@ li.click(); // undefined
 
 // Qual o construtor do dado abaixo:
 li.hidden.constructor.name;
-// Boolean
+// String
