@@ -8,3 +8,5 @@ Function;
 // Objetos do host são aqueles implementados pelo próprio ambiente. (Navegadores).
 HTMLCollection;
 NodeList;
+
+//User
