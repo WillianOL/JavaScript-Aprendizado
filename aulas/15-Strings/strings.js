@@ -13,7 +13,8 @@ const carac = frase.charAt(2); // Mostra o caracter de acordo com seu indicie
 const concatena = frase.concat(nome, "."); // Concatena as strings
 
 const listaGames = 'PS2, GameBoy, Xbox, PS1'
-const game = 'PS2'
+const game = 'Xbox'
 // Vai procurar a string dento da selecionada.
-listaGames.includes(game) // True
+listaGames.includes(game, 5) // True - vai procurar a partir do index 5
 game.includes(listaGames) // False
+
