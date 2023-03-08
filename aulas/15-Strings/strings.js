@@ -18,8 +18,8 @@ const game = 'Xbox'
 gameList.includes(game, 5) // True - vai procurar a partir do index 5
 game.includes(gameList) // False
 
-const endsWith = gameList.endsWith('PS1') // true - pois termina com "PS1"
-const startsWith = game.startsWith('X') // true - pois comerça com "X"
+const terminaCom = gameList.endsWith('PS1') // true - pois termina com "PS1"
+const comecaCom = game.startsWith('X') // true - pois comerça com "X"
 
 const palavra01 = 'Andei por ai'
 const palavra02 = 'Comprei ovos'
@@ -34,3 +34,11 @@ console.log(palavra01.slice(2, 4)) // mostra os caracteres do 2 até 4.
 const frase02 = 'Fui caminhar pela manhã'
 console.log(frase02.indexOf('pela')); // Retorna o indicie da string selecionada. (primeira que aparecer)
 console.log(frase02.lastIndexOf('a')); // Retorna a ultima string selecionada. No caso, o ultimo "a".
+
+const listaPreco = ['R$9', 'R$99', 'R$199', 'R$1999'];
+
+console.log(listaPreco[0].padEnd(5, ',0')); // Da um espaço final da string, preenchendo o espaço vazio com ',0'
+
+listaPreco.forEach((itens) => {
+    console.log(itens.padStart(10, '=')); // Da um espaço no começo da string, preenchendo o espaço vazio com '='
+}) 
