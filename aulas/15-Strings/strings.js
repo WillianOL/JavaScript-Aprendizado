@@ -33,4 +33,4 @@ console.log(palavra01.slice(2, 4)) // mostra os caracteres do 2 até 4.
 
 const frase02 = 'Fui caminhar pela manhã'
 console.log(frase02.indexOf('pela')); // Retorna o indicie da string selecionada. (primeira que aparecer)
-console.log(frase02.lastIndexOf('a')); // Retorna a ultima string selecionada. No caso, o ultimo "a"
+console.log(frase02.lastIndexOf('a')); // Retorna a ultima string selecionada. No caso, o ultimo "a".
