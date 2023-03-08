@@ -41,4 +41,10 @@ console.log(listaPreco[0].padEnd(5, ',0')); // Da um espaço final da string, pr
 
 listaPreco.forEach((itens) => {
     console.log(itens.padStart(10, '=')); // Da um espaço no começo da string, preenchendo o espaço vazio com '='
-}) 
+})
+
+const palavra = 'oi'
+console.log(palavra.repeat(5)); // Simplimente vai repetir a string de acordo com a quantidade passada.
+
+let preco = 'R$ 1253,06';
+console.log(preco.replace(',', '.')); 
