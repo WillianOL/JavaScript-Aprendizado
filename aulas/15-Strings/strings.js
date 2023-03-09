@@ -21,7 +21,7 @@ game.includes(gameList) // False
 const terminaCom = gameList.endsWith('PS1') // true - pois termina com "PS1"
 const comecaCom = game.startsWith('X') // true - pois comerça com "X"
 
-const palavra01 = 'Andei por ai'
+const palavra01 = 'Eu andei de bike'
 const palavra02 = 'Comprei ovos'
 const palavra03 = 'Olá, Dev!'
 
@@ -47,4 +47,5 @@ const palavra = 'oi'
 console.log(palavra.repeat(5)); // Simplimente vai repetir a string de acordo com a quantidade passada.
 
 let preco = 'R$ 1253,06';
-console.log(preco.replace(',', '.')); 
+preco = preco.replace(',', '.'); 
+console.log(preco);
