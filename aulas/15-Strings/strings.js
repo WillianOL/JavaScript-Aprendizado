@@ -50,6 +50,6 @@ let preco = 'R$ 1253,06';
 preco = preco.replace(',', '.');  // replace troca uma coisa por outra. No caso, a vírgula pelo ponto.
 console.log(preco);
 
-let listaItens = 'Boné, Calça, Camisa, Shorts'
-listaItens = listaItens.replace('Camisa', 'Cuécas');
+let listaItens = 'Boné, Camisa, Camisa, Shorts'
+listaItens = listaItens.replace('Camisa', 'Cuécas'); // substituí o primeiro item que ele encontra.
 console.log(listaItens);
