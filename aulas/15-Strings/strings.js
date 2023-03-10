@@ -43,19 +43,23 @@ console.log(listaPreco[0].padEnd(5, ',0')); // Da um espaço final da string, pr
 
 listaPreco.forEach((itens) => {
     console.log(itens.padStart(10, '=')); // Da um espaço no começo da string, preenchendo o espaço vazio com '='
-})
+});
 
-const palavra = 'oi'
+const palavra = 'oi';
 console.log(palavra.repeat(5)); // Simplimente vai repetir a string de acordo com a quantidade passada.
 
 let preco = 'R$ 1253,06';
 preco = preco.replace(',', '.');  // replace troca uma coisa por outra. No caso, a vírgula pelo ponto.
 console.log(preco);
 
-let listaItens = 'Boné, Camisa, Camisa, Shorts'
+let listaItens = 'Boné, Camisa, Camisa, Shorts';
 listaItens = listaItens.replace('Camisa', 'Cuécas'); // substituí o primeiro item que ele encontra.
 console.log(listaItens);
 
 // O split faz a separação de itens de acordo com o valor passado e retorna uma Array.
 console.log(listaItens.split(', ')); // No caso, vai quebrar sempre que uma ", " aparecer.
 console.log(listaItens.split(''));
+
+const htmlLista = '<p>Mensagem</p> <p>Olá, mundo!</p>';
+const arrayLista = htmlLista.split('p'); // removento as tags p.
+const arrayM = arrayLista.join('div'); // No lugar de p, colocar div (método de array).
