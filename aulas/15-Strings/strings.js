@@ -63,3 +63,12 @@ console.log(listaItens.split(''));
 const htmlLista = '<p>Mensagem</p> <p>Olá, mundo!</p>';
 const arrayLista = htmlLista.split('p'); // removento as tags p.
 const arrayM = arrayLista.join('div'); // No lugar de p, colocar div (método de array).
+console.log(arrayM);
+
+
+const nome01 = 'WILLIAN';
+const nome02 = 'willian';
+const nome03 = 'Willian';
+
+console.log(nome01.toLowerCase() === 'willian'); // Transforma tudo em minúsculas.
+console.log(nome02.toUpperCase() === 'WILLIAN'); // Transforma tudo em maiúsculas.
