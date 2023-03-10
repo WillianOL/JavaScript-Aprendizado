@@ -47,5 +47,9 @@ const palavra = 'oi'
 console.log(palavra.repeat(5)); // Simplimente vai repetir a string de acordo com a quantidade passada.
 
 let preco = 'R$ 1253,06';
-preco = preco.replace(',', '.'); // replace troca uma coisa por outra. No caso, a vírgula pelo ponto
+preco = preco.replace(',', '.');  // replace troca uma coisa por outra. No caso, a vírgula pelo ponto.
 console.log(preco);
+
+let listaItens = 'Boné, Calça, Camisa, Shorts'
+listaItens = listaItens.replace('Camisa', 'Cuécas');
+console.log(listaItens);
