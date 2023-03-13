@@ -16,4 +16,4 @@ const roupa = 59.90
 console.log(roupa.toFixed()); // 60
 
 const casa = 150000.378
-console.log(casa.toFixed(2)); // número de casas após a vírgula arredondado.
+console.log(casa.toFixed(2)); // 150000.38 - número de casas após a vírgula arredondado.
