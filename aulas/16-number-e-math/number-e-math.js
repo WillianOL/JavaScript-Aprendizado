@@ -30,3 +30,8 @@ console.log(celular.toString());
 
 //Math - objeto nativo que possui métodos e prepriedades das expressões matemáticas.
 console.log(Math.PI); // propriedade
+
+console.log(Math.abs(-20.7)); // 20.7 - retorna o absoluto, ou seja, retorna sempre positivo
+console.log(Math.ceil(3.4)); // 4 - arredonda forçando pra cima.
+console.log(Math.floor(5.9)); // 5 - arredonda forçando pra baixo.
+console.log(Math.round(7.7)); // 8 - arredonda como em uma função matemática normal
