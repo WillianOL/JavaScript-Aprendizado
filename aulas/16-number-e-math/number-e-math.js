@@ -35,3 +35,9 @@ console.log(Math.abs(-20.7)); // 20.7 - retorna o absoluto, ou seja, retorna sem
 console.log(Math.ceil(3.4)); // 4 - arredonda forçando pra cima.
 console.log(Math.floor(5.9)); // 5 - arredonda forçando pra baixo.
 console.log(Math.round(7.7)); // 8 - arredonda como em uma função matemática normal.
+
+// retorna o valor maximo, ou seja, o maior.
+console.log(Math.max(3, 20, 7, 35, -90)); // 35
+
+// retorna o valor minimo, ou seja, o menor.
+console.log(Math.min(90, -100, 2, 75)); // -100
