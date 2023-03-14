@@ -28,3 +28,5 @@ console.log(moedaUs.toLocaleString('en-US', {style: 'currency', currency: 'USD'}
 const celular = 1599.99
 console.log(celular.toString()); 
 
+//Math - objeto nativo que possui métodos e prepriedades das expressões matemáticas.
+console.log(Math.PI); // propriedade
