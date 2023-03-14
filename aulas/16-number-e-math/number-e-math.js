@@ -24,4 +24,7 @@ const moedaUs = 27.2;
 console.log(moedaBr.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}));
 console.log(moedaUs.toLocaleString('en-US', {style: 'currency', currency: 'USD'}));
 
+//Transforma número em string
+const celular = 1599.99
+console.log(celular.toString()); 
 
