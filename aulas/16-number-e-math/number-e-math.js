@@ -42,6 +42,6 @@ console.log(Math.max(3, 20, 7, 35, -90)); // 35
 // retorna o valor minimo, ou seja, o menor.
 console.log(Math.min(90, -100, 2, 75)); // -100
 
-// Retorna um valor aleatório
-console.log(Math.random() * 10); // valor quebrado de 0 a 10
+// Retorna um valor aleatório.
+console.log(Math.random() * 10); // valor quebrado de 0 a 10.
 console.log(Math.floor(Math.random() * (80 - 50 + 1))) + 50; // número aleatório entre 80 e 50.
