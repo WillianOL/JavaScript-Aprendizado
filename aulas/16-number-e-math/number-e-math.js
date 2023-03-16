@@ -41,3 +41,4 @@ console.log(Math.max(3, 20, 7, 35, -90)); // 35
 
 // retorna o valor minimo, ou seja, o menor.
 console.log(Math.min(90, -100, 2, 75)); // -100
+
