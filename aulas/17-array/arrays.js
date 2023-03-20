@@ -11,3 +11,18 @@ console.log(arrayDados[3]('Acesso negado')); // Acessano e executanto a função
 const cores = new Array('Azul', 'Preto', 'Roxo', 'Vermelho'); // Criando um array usando o construtor Array.
 console.log(cores);
 console.log(cores.length);
+
+// Métodos de Array.
+const lista = document.querySelectorAll('li');
+console.log(Array.from(lista));
+
+// Objetos que se parecem com array.
+const arrayCreate = {
+    0: 'Item1',
+    1: 'Item2',
+    2: 'Item3',
+    3: 'Item4',
+    length: 4,
+}
+
+console.log(Array.from(arrayCreate));
