@@ -7,3 +7,7 @@ console.log(arrayDados[2][0]); // 10 - Acessando o primeiro elemento do array de
 console.log(arrayDados[2][1].cor); // 'Preto' - acessando o objeto dentro do array.
 console.log(arrayDados[2][1].comida); // 'Bolo'.
 console.log(arrayDados[3]('Acesso negado')); // Acessano e executanto a função.
+
+const cores = new Array('Azul', 'Preto', 'Roxo', 'Vermelho'); // Criando um array usando o construtor Array.
+console.log(cores);
+console.log(cores.length);
