@@ -26,4 +26,5 @@ listaPrecos.forEach((itens) => {
     result += limparPreco(itens) 
 })
 
-console.log(result);
+const formatNumber = result.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+console.log(formatNumber);
