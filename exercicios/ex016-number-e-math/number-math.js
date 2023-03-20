@@ -17,7 +17,7 @@ const listaPrecos = ['R$ 59,99', ' R$ 100,222',
 
 function limparPreco(preco) {
     preco = +preco.toUpperCase().replace('R$', ' ').trim().replace(',', '.');
-    preco = +preco.toFixed(2)
+    preco = +preco.toFixed(2);
     return preco
 }
 
