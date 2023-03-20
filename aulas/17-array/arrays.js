@@ -24,5 +24,4 @@ const arrayCreate = {
     3: 'Item4',
     length: 4,
 }
-
 console.log(Array.from(arrayCreate));
