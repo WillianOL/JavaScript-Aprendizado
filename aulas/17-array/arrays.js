@@ -52,10 +52,12 @@ listaCarros.unshift('Uno') // Adiciona ao inicio
 listaCarros.push('Gol quadrado', 'Chevete') // Adiciona ao final
 console.log(listaCarros);
 
-const removeFinal = listaCarros.pop(); // 'Chevete' - Remove o ultimo valor da array e retorna ele
+const removeFinal = listaCarros.pop(); // "Chevete" - Remove o ultimo valor da array e retorna ele.
 console.log(listaCarros);
 console.log(removeFinal);
 
-const removeInicio = listaCarros.shift();
+const removeInicio = listaCarros.shift(); // "Uno" - Remove o primeiro e retorna ele.
 console.log(listaCarros);
 console.log(removeInicio);
+
+console.log(listaCarros.reverse()); // Inverte a ordem da array
