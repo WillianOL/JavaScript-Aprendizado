@@ -46,3 +46,16 @@ const listaPrecos = [20, 33, 2, 9, -1, 44]
 console.log(listaCompras.sort()); // Em strings, organiza em orderm alfabética.
 console.log(listaPrecos.sort()); // "tenta" organizar, mas organiza de caracter por caracter.
 
+const listaCarros = ['Monza', 'Ferrari', 'Gol'];
+// Os dois métodos alteram o valor da array
+listaCarros.unshift('Uno') // Adiciona ao inicio
+listaCarros.push('Gol quadrado', 'Chevete') // Adiciona ao final
+console.log(listaCarros);
+
+const removeFinal = listaCarros.pop(); // 'Chevete' - Remove o ultimo valor da array e retorna ele
+console.log(listaCarros);
+console.log(removeFinal);
+
+const removeInicio = listaCarros.shift();
+console.log(listaCarros);
+console.log(removeInicio);
