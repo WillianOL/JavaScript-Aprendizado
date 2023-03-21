@@ -33,3 +33,9 @@ console.log(verificaArray);
 const array01 = Array.of(15) // [15]
 const array02 = new Array(15) // [vazio * 15] - 15 espaços em branco
 const array03 = Array(15) // [vazio * 15] - mesma coisa ndo "new Array".
+
+const listaItens = ['Carro', 'Moto', 'Caminhão',['Peneu' ,{preco: 20000, marca: 'Ford'}]]
+console.log(listaItens.length) // 4 - numero de elementos
+console.log(listaItens[2].length); // 8 - número de letras pois o 3 elemento é uma string.
+console.log(listaItens[3]); // 2 - número de elementos do array
+console.log(listaItens[3][1].preco); // 20000
