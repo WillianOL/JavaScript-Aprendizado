@@ -14,7 +14,7 @@ console.log(cores.length);
 
 // Métodos de Array.
 const lista = document.querySelectorAll('li');
-console.log(Array.from(lista));
+console.log(Array.from(lista)); // Transforma de NodeList para array
 
 // Objetos que se parecem com array.
 const arrayCreate = {
@@ -22,6 +22,9 @@ const arrayCreate = {
     1: 'Item2',
     2: 'Item3',
     3: 'Item4',
-    length: 4,
+    length: 4, // Precisa ter a propriedade length.
 }
 console.log(Array.from(arrayCreate));
+
+const verificaArray = Array.isArray(lista); // false - Verifica se é um array
+console.log(verificaArray);
