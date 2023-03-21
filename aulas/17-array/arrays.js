@@ -39,3 +39,10 @@ console.log(listaItens.length) // 4 - numero de elementos
 console.log(listaItens[2].length); // 8 - número de letras pois o 3 elemento é uma string.
 console.log(listaItens[3]); // 2 - número de elementos do array
 console.log(listaItens[3][1].preco); // 20000
+
+// Métodos modificadores de arrays
+const listaCompras = ['arroz', 'feijão', 'carne', 'queijo']
+const listaPrecos = [20, 33, 2, 9, -1, 44]
+console.log(listaCompras.sort()); // Em strings, organiza em orderm alfabética.
+console.log(listaPrecos.sort()); // "tenta" organizar, mas organiza de caracter por caracter.
+
