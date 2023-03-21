@@ -28,3 +28,8 @@ console.log(Array.from(arrayCreate));
 
 const verificaArray = Array.isArray(lista); // false - Verifica se é um array
 console.log(verificaArray);
+
+// Forma de criar um array
+const array01 = Array.of(15) // [15]
+const array02 = new Array(15) // [vazio * 15] - 15 espaços em branco
+const array03 = Array(15) // [vazio * 15] - mesma coisa ndo "new Array".
