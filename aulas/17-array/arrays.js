@@ -8,9 +8,12 @@ console.log(arrayDados[2][1].cor); // 'Preto' - acessando o objeto dentro do arr
 console.log(arrayDados[2][1].comida); // 'Bolo'.
 console.log(arrayDados[3]('Acesso negado')); // Acessando e executanto a função.
 
+// Os valores das arrays não são estáticos
 const cores = new Array('Azul', 'Preto', 'Roxo', 'Vermelho'); // Criando um array usando o construtor Array.
-console.log(cores);
-console.log(cores.length);
+cores[0]; // azul
+cores[1] = 'Rosa';
+cores[9] = 'Lilás';
+cores.length // 10
 
 // Métodos de Array.
 const lista = document.querySelectorAll('li');
@@ -61,3 +64,8 @@ console.log(listaCarros);
 console.log(removeInicio);
 
 console.log(listaCarros.reverse()); // Inverte a ordem da array
+
+listaCores01 = ['Azul', 'vermelho', 'verde'];
+console.log(listaCores01);
+listaCores01.splice(1, 0, 'Preto')
+console.log(listaCores01);
