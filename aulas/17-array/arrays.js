@@ -85,3 +85,14 @@ console.log(linguagens.includes('php')); // true - verifica sem tem na array
 console.log(linguagens.includes('Html')); // false
 console.log(linguagens.indexOf('JS')); // 2 - retorna o index do valor passado (primeiro)
 console.log(linguagens.lastIndexOf('JS')); // 4 - retorna o index do valor passado (ultimo)
+
+// junta todos os valores da array e retorna uma string
+const join = linguagens.join(', ') // Separa os itens com o valor pasasdo ", " - se não passar valor, sera somente ","
+console.log(join);
+
+// Macete para trocar algo com o join
+let titulo = '<h2>Titulo principal</h2>'
+titulo = titulo.split('h2') // remove o h2 e retorna uma array
+titulo = titulo.join('h1') // depois da virgula adicionar o h2
+
+console.log(titulo);
