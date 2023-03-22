@@ -13,9 +13,17 @@ const li = document.querySelectorAll('li')
 li.forEach(i => i.classList.add('TESTE'));
 
 const cores = ['Azul', 'Preto', 'Vermelho']
-const coresModificadas = cores.map((item,index) => {
+const coresModificadas = cores.map((item,index) => { 
     return item.toUpperCase()
 })
-
 console.log(coresModificadas);
-console.log(cores);
+
+// Usar o map quando for trabalhar com listas/arrays que vai alterar um valor
+const numeros = [10, 7, 33, 100];
+let result = 0;
+const numerosSomados = numeros.map((n) => {
+    result = result + n
+    return result
+})
+
+console.log(numerosSomados); // [10, 17, 50, 150]
