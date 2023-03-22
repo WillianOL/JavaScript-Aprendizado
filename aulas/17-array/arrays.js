@@ -67,5 +67,11 @@ console.log(listaCarros.reverse()); // Inverte a ordem da array
 
 listaCores01 = ['Azul', 'vermelho', 'verde'];
 console.log(listaCores01);
-listaCores01.splice(1, 0, 'Preto')
+console.log(listaCores01.splice(1, 1, 'Preto')); // Adiciona itens apartir do index passado, remove um número de itens passado dps do index(retorna ele).
 console.log(listaCores01);
+
+
+listaFrutas = ['item01', 'item02', 'item03'].fill('Jabuticaba', 1) // SImplismente preenche de acordo com o valor passado
+console.log(listaFrutas); // ['item01', 'Jabuticaba', 'Jabuticaba']
+
+// Métodos de acesso - não modificam a array.
