@@ -80,7 +80,7 @@ const arrayFinal = ['Jessica', 'Letícia'];
 const arrayConcat = arrayInicial.concat(arrayFinal) // Concatena os duas arrays, formando uma nova. (NÃO ALTERA AS ARRAYS ANTERIORES).
 console.log(arrayConcat);
 
-const linguagens = ['python', 'php', 'JS', 'Java', 'JS'];
+let linguagens = ['python', 'php', 'JS', 'Java', 'JS'];
 console.log(linguagens.includes('php')); // true - verifica sem tem na array
 console.log(linguagens.includes('Html')); // false
 console.log(linguagens.indexOf('JS')); // 2 - retorna o index do valor passado (primeiro)
@@ -94,5 +94,12 @@ console.log(join);
 let titulo = '<h2>Titulo principal</h2>'
 titulo = titulo.split('h2') // remove o h2 e retorna uma array
 titulo = titulo.join('h1') // depois da virgula adicionar o h2
-
+ 
 console.log(titulo);
+
+// CLonagem de arrays
+const cloneLinguagem = linguagens.slice(); // Vai clonar a array linguagens inteira 
+cloneLinguagem.push('JSON');
+// São duas diferentes
+console.log(linguagens); 
+console.log(cloneLinguagem);
