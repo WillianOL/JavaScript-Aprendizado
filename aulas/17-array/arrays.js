@@ -6,7 +6,7 @@ console.log(arrayDados[1]); // String {PARABÊNS}
 console.log(arrayDados[2][0]); // 10 - Acessando o primeiro elemento do array dentro dele.
 console.log(arrayDados[2][1].cor); // 'Preto' - acessando o objeto dentro do array.
 console.log(arrayDados[2][1].comida); // 'Bolo'.
-console.log(arrayDados[3]('Acesso negado')); // Acessano e executanto a função.
+console.log(arrayDados[3]('Acesso negado')); // Acessando e executanto a função.
 
 const cores = new Array('Azul', 'Preto', 'Roxo', 'Vermelho'); // Criando um array usando o construtor Array.
 console.log(cores);
@@ -24,7 +24,7 @@ const arrayCreate = {
     3: 'Item4',
     length: 4, // Precisa ter a propriedade length.
 }
-console.log(Array.from(arrayCreate));
+console.log(Array.from(arrayCreate)); // Transforma aquilo que é parecido com um array em um array.
 
 const verificaArray = Array.isArray(lista); // false - Verifica se é um array
 console.log(verificaArray);
@@ -32,19 +32,19 @@ console.log(verificaArray);
 // Forma de criar um array
 const array01 = Array.of(15) // [15]
 const array02 = new Array(15) // [vazio * 15] - 15 espaços em branco
-const array03 = Array(15) // [vazio * 15] - mesma coisa ndo "new Array".
+const array03 = Array(15) // [vazio * 15] - mesma coisa do "new Array".
 
 const listaItens = ['Carro', 'Moto', 'Caminhão',['Peneu' ,{preco: 20000, marca: 'Ford'}]]
 console.log(listaItens.length) // 4 - numero de elementos
 console.log(listaItens[2].length); // 8 - número de letras pois o 3 elemento é uma string.
 console.log(listaItens[3]); // 2 - número de elementos do array
-console.log(listaItens[3][1].preco); // 20000
+console.log(listaItens[3][1].preco); // 20000 - acessando o parâmetro do objeto
 
 // Métodos modificadores de arrays
 const listaCompras = ['arroz', 'feijão', 'carne', 'queijo']
 const listaPrecos = [20, 33, 2, 9, -1, 44]
 console.log(listaCompras.sort()); // Em strings, organiza em orderm alfabética.
-console.log(listaPrecos.sort()); // "tenta" organizar, mas organiza de caracter por caracter.
+console.log(listaPrecos.sort()); // Em numbers "tenta" organizar, mas organiza de caracter por caracter.
 
 const listaCarros = ['Monza', 'Ferrari', 'Gol'];
 // Os dois métodos alteram o valor da array
