@@ -75,3 +75,13 @@ listaFrutas = ['item01', 'item02', 'item03'].fill('Jabuticaba', 1) // SImplismen
 console.log(listaFrutas); // ['item01', 'Jabuticaba', 'Jabuticaba']
 
 // Métodos de acesso - não modificam a array.
+const arrayInicial = ['Pedro', 'Amanda', 'Julio'];
+const arrayFinal = ['Jessica', 'Letícia'];
+const arrayConcat = arrayInicial.concat(arrayFinal) // Concatena os duas arrays, formando uma nova. (NÃO ALTERA AS ARRAYS ANTERIORES).
+console.log(arrayConcat);
+
+const linguagens = ['python', 'php', 'JS', 'Java', 'JS'];
+console.log(linguagens.includes('php')); // true - verifica sem tem na array
+console.log(linguagens.includes('Html')); // false
+console.log(linguagens.indexOf('JS')); // 2 - retorna o index do valor passado (primeiro)
+console.log(linguagens.lastIndexOf('JS')); // 4 - retorna o index do valor passado (ultimo)
