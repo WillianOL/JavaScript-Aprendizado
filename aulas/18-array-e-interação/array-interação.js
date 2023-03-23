@@ -70,3 +70,10 @@ const acumular = listaNumeros.reduce((a, item) => {
 }, 0);
 
 console.log(`Valor total foi de ${acumular}`);
+
+const listaNumeros2 = [10, 33, 4, 55, 22, 44, 0];
+// Usando o reduce para retornar o maior valor da array
+const menorNumero = listaNumeros2.reduce((anterior, atual) => {
+    return anterior > atual ? anterior : atual;
+});
+console.log(menorNumero);
