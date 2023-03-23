@@ -95,3 +95,7 @@ const todosVerdade = listaCarros.every((carro) => {
     return carro;
 });
 console.log(todosVerdade); // false - por causa da string vazia
+
+const numbers = [12, 10, 7, 22, 20, 39];
+const mairQue5 = numbers.every(n => n > 5);
+console.log(mairQue5); // true
