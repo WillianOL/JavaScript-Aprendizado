@@ -18,7 +18,7 @@ const coresModificadas = cores.map((item, index) => {
 });
 console.log(coresModificadas);
 
-// Usar o map quando for trabalhar com listas/arrays que vai retornar uma nova array
+// Usar o map quando for trabalhar com listas/arrays que vai retornar uma nova array com valores novos
 const numeros = [10, 7, 33, 100];
 let result = 0;
 const numerosSomados = numeros.map((n) => {
@@ -58,7 +58,7 @@ const minutosAula = aulas.map((item) => item.min);
 console.log(minutosAula);
 
 // Mesma coisa do de cima
-const nomesAula = (aulas) => aulas.nome; // Somente uma linha de código, por isso não foi usado "()" nem "{}";
+const nomesAula = (aulas) => aulas.nome; // Somente uma linha de código usando "=>", por isso não foi usado "()" nem "{}";
 const arrayNomeAulas = aulas.map(nomesAula); // retorna a array
 console.log(arrayNomeAulas);
 
