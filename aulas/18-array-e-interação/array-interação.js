@@ -79,9 +79,15 @@ const menorNumero = listaNumeros2.reduce((anterior, atual) => {
 console.log(menorNumero);
 
 const listaFrutas = ["Maçã", "Uva", "Limão", "Melão"];
+// Mesma coisa do reduce normal, só que a interação acontece da esquerda pra direita
+const interacao = listaFrutas.reduceRight((acl, item) => acl + " " + item);
+console.log(interacao); // Melão Limão Uva Maçã.
 
-const listaFrutasMaiuscolas = listaFrutas.map((item) => {
-    return item.toUpperCase()
-})
+// Verifica se um item existe dentro da array e retorna um valor booleano
+const temLimao = listaFrutas.some((item) => {
+    return item === "Limão";
+});
+console.log(temLimao); // true
 
-console.log(listaFrutasMaiuscolas);
+// Verifica se todos os valores são truthy, se um dos valores não for, retorna false
+const listaCarros = ["Polo", "Chevete", "Monsa"];
