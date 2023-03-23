@@ -54,10 +54,19 @@ const aulas = [
         min: 25,
     },
 ];
-const minutosAula = aulas.map(item => item.min);
+const minutosAula = aulas.map((item) => item.min);
 console.log(minutosAula);
 
 // Mesma coisa do de cima
-const nomesAula = aulas => aulas.nome; // Somente uma linha de código, por isso não foi usado "()" nem "{}";
-const arrayNomeAulas = aulas.map(nomesAula) // retorna a array
+const nomesAula = (aulas) => aulas.nome; // Somente uma linha de código, por isso não foi usado "()" nem "{}";
+const arrayNomeAulas = aulas.map(nomesAula); // retorna a array
 console.log(arrayNomeAulas);
+
+const listaNumeros = [20, 5, 10, 30];
+// No reduce temos um novo argumento que é o acumulador, onde podemos passar ele em valores
+const acumular = listaNumeros.reduce((a, item) => {
+    console.log(a, item);
+    return a + item;
+}, 0);
+
+console.log(`Valor total foi de ${acumular}`);
