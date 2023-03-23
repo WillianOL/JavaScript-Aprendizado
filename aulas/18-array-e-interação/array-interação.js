@@ -1,8 +1,8 @@
 const arrayCarros = ["Monza", "Fiat", "Uno"];
 
 arrayCarros.forEach((item, index, array) => {
-  item = item.toUpperCase();
-  console.log(item, index);
+    item = item.toUpperCase();
+    console.log(item, index);
 });
 
 console.log(arrayCarros); // A array não muda após a alteração
@@ -14,7 +14,7 @@ li.forEach((i) => i.classList.add("TESTE"));
 
 const cores = ["Azul", "Preto", "Vermelho"];
 const coresModificadas = cores.map((item, index) => {
-  return item.toUpperCase();
+    return item.toUpperCase();
 });
 console.log(coresModificadas);
 
@@ -22,8 +22,8 @@ console.log(coresModificadas);
 const numeros = [10, 7, 33, 100];
 let result = 0;
 const numerosSomados = numeros.map((n) => {
-  result = result + n;
-  return result;
+    result = result + n;
+    return result;
 });
 
 console.log(numerosSomados); // [10, 17, 50, 150]
