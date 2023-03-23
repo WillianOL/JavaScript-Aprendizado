@@ -30,7 +30,7 @@ console.log(numerosSomados); // [10, 17, 50, 150]
 
 // Outro exemplo
 const numerosX4 = numeros.map((item) => {
-    return item * 4
+    return item * 4;
 });
 
 console.log(numerosX4);
