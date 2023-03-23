@@ -90,4 +90,8 @@ const temLimao = listaFrutas.some((item) => {
 console.log(temLimao); // true
 
 // Verifica se todos os valores são truthy, se um dos valores não for, retorna false
-const listaCarros = ["Polo", "Chevete", "Monsa"];
+const listaCarros = ["Polo", "Chevete", "Monsa", ""];
+const todosVerdade = listaCarros.every((carro) => {
+    return carro;
+});
+console.log(todosVerdade); // false - por causa da string vazia
