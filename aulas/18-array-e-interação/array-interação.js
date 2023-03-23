@@ -63,7 +63,7 @@ const arrayNomeAulas = aulas.map(nomesAula); // retorna a array
 console.log(arrayNomeAulas);
 
 const listaNumeros = [20, 5, 10, 30];
-// No reduce temos um novo argumento que é o acumulador, onde podemos passar ele em valores
+// No reduce temos um novo argumento que é o acumulador, onde ele é o valor anterior.
 const acumular = listaNumeros.reduce((a, item) => {
     console.log(a, item);
     return a + item;
@@ -77,3 +77,11 @@ const menorNumero = listaNumeros2.reduce((anterior, atual) => {
     return anterior > atual ? anterior : atual;
 });
 console.log(menorNumero);
+
+const listaFrutas = ["Maçã", "Uva", "Limão", "Melão"];
+
+const listaFrutasMaiuscolas = listaFrutas.map((item) => {
+    return item.toUpperCase()
+})
+
+console.log(listaFrutasMaiuscolas);
