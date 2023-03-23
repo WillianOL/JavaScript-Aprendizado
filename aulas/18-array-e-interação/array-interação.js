@@ -18,7 +18,7 @@ const coresModificadas = cores.map((item, index) => {
 });
 console.log(coresModificadas);
 
-// Usar o map quando for trabalhar com listas/arrays que vai alterar um valor
+// Usar o map quando for trabalhar com listas/arrays que vai retornar uma nova array
 const numeros = [10, 7, 33, 100];
 let result = 0;
 const numerosSomados = numeros.map((n) => {
