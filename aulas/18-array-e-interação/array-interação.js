@@ -34,3 +34,25 @@ const numerosX4 = numeros.map((item) => {
 });
 
 console.log(numerosX4);
+
+// Retornando um valor do objeto e armazenando em uma nova array.
+const aulas = [
+    {
+        nome: "AULA1",
+        min: 20,
+    },
+    {
+        nome: "AULA2",
+        min: 15,
+    },
+    {
+        nome: "AULA3",
+        min: 17,
+    },
+    {
+        nome: "AULA4",
+        min: 25,
+    },
+];
+const minutosAula = aulas.map(item => item.min);
+console.log(minutosAula);
