@@ -38,21 +38,26 @@ console.log(numerosX4);
 // Retornando um valor do objeto e armazenando em uma nova array.
 const aulas = [
     {
-        nome: "AULA1",
+        nome: "aula01",
         min: 20,
     },
     {
-        nome: "AULA2",
+        nome: "aula02",
         min: 15,
     },
     {
-        nome: "AULA3",
+        nome: "aula03",
         min: 17,
     },
     {
-        nome: "AULA4",
+        nome: "aula04",
         min: 25,
     },
 ];
 const minutosAula = aulas.map(item => item.min);
 console.log(minutosAula);
+
+// Mesma coisa do de cima
+const nomesAula = aulas => aulas.nome; // Somente uma linha de código, por isso não foi usado "()" nem "{}";
+const arrayNomeAulas = aulas.map(nomesAula) // retorna a array
+console.log(arrayNomeAulas);
