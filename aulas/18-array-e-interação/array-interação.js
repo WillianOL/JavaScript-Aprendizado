@@ -78,7 +78,6 @@ const menorNumero = listaNumeros2.reduce((anterior, atual) => {
 });
 console.log(menorNumero);
 
-
 const trabalhos = [
     {
         nome: "Uber",
@@ -126,5 +125,10 @@ console.log(todosVerdade); // false - por causa da string vazia
 
 const numbers = [12, 10, 7, 22, 20, 39];
 const mairQue5 = numbers.every((n) => n > 5);
-console.log(mairQue5); // true
+console.log(mairQue5); // true -  todos os números são maiores que 5
 
+const listaTrabalhos = ["Programador", "Designer", "SEO"];
+const retornaIndex = listaTrabalhos.findIndex((itens) => {
+    return itens === "Designer";
+}); // 1
+console.log(retornaIndex);
