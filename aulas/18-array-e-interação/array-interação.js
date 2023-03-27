@@ -97,5 +97,34 @@ const todosVerdade = listaCarros.every((carro) => {
 console.log(todosVerdade); // false - por causa da string vazia
 
 const numbers = [12, 10, 7, 22, 20, 39];
-const mairQue5 = numbers.every(n => n > 5);
+const mairQue5 = numbers.every((n) => n > 5);
 console.log(mairQue5); // true
+
+const trabalhos = [
+    {
+        nome: "Uber",
+        hora: 6,
+    },
+    {
+        nome: "Programador",
+        hora: 8,
+    },
+    {
+        nome: "Designer",
+        hora: 4,
+    },
+    {
+        nome: "Chefe de obras",
+        hora: 12,
+    },
+];
+
+// Vai retornar um objeto com apenas os nomes dos trabalhos
+const listaNomeTrabalhos = trabalhos.reduce((acumulador, trab, index) => {
+    acumulador[index] = trab.nome; // o acumulador inicial vai receber o index do primeiro item, depois vai receber o nome do primeiro trabalho.
+    return acumulador;
+}, {});
+
+console.log(listaNomeTrabalhos);
+
+
