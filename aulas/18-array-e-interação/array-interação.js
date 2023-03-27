@@ -127,8 +127,17 @@ const numbers = [12, 10, 7, 22, 20, 39];
 const mairQue5 = numbers.every((n) => n > 5);
 console.log(mairQue5); // true -  todos os números são maiores que 5
 
+// Retorna o index do valor correspondente ao return
 const listaTrabalhos = ["Programador", "Designer", "SEO"];
 const retornaIndex = listaTrabalhos.findIndex((itens) => {
     return itens === "Designer";
-}); // 1
+}); // 1 - index de "Designer"
 console.log(retornaIndex);
+
+// retorna o PRIMEIRO item correspondente ao return
+const listaNumeros3 = [5, 25, 88, 37, 40];
+const maiorQue10 = listaNumeros3.find((numbers) =>{
+    return numbers > 10
+}); // 25 - primeiro valor maior que 10
+console.log(maiorQue10);
+
