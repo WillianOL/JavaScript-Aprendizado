@@ -78,27 +78,6 @@ const menorNumero = listaNumeros2.reduce((anterior, atual) => {
 });
 console.log(menorNumero);
 
-const listaFrutas = ["Maçã", "Uva", "Limão", "Melão"];
-// Mesma coisa do reduce normal, só que a interação acontece da esquerda pra direita
-const interacao = listaFrutas.reduceRight((acl, item) => acl + " " + item);
-console.log(interacao); // Melão Limão Uva Maçã.
-
-// Verifica se um item existe dentro da array e retorna um valor booleano
-const temLimao = listaFrutas.some((item) => {
-    return item === "Limão";
-});
-console.log(temLimao); // true
-
-// Verifica se todos os valores são truthy, se um dos valores não for, retorna false
-const listaCarros = ["Polo", "Chevete", "Monsa", ""];
-const todosVerdade = listaCarros.every((carro) => {
-    return carro;
-});
-console.log(todosVerdade); // false - por causa da string vazia
-
-const numbers = [12, 10, 7, 22, 20, 39];
-const mairQue5 = numbers.every((n) => n > 5);
-console.log(mairQue5); // true
 
 const trabalhos = [
     {
@@ -127,4 +106,25 @@ const listaNomeTrabalhos = trabalhos.reduce((acumulador, trab, index) => {
 
 console.log(listaNomeTrabalhos);
 
+const listaFrutas = ["Maçã", "Uva", "Limão", "Melão"];
+// Mesma coisa do reduce normal, só que a interação acontece da esquerda pra direita
+const interacao = listaFrutas.reduceRight((acl, item) => acl + " " + item);
+console.log(interacao); // Melão Limão Uva Maçã.
+
+// Verifica se um item existe dentro da array e retorna um valor booleano
+const temLimao = listaFrutas.some((item) => {
+    return item === "Limão";
+});
+console.log(temLimao); // true
+
+// Verifica se todos os valores são truthy, se um dos valores não for, retorna false
+const listaCarros = ["Polo", "Chevete", "Monsa", ""];
+const todosVerdade = listaCarros.every((carro) => {
+    return carro;
+});
+console.log(todosVerdade); // false - por causa da string vazia
+
+const numbers = [12, 10, 7, 22, 20, 39];
+const mairQue5 = numbers.every((n) => n > 5);
+console.log(mairQue5); // true
 
