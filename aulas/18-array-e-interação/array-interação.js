@@ -141,10 +141,42 @@ const maiorQue10 = listaNumeros3.find((numbers) => {
 }); // 25 - primeiro valor maior que 10
 console.log(maiorQue10);
 
-// Filtra e retorna os itens
+// Filtra e retorna os itens -  retorna apenas aqueles itens que forem truthy
 const carros = ["Gol", null, "Fusca", undefined, "Tesla", 0];
 const retornaVerdadeiro = carros.filter((itens) => {
-    return itens === "Gol"
+    return itens
 });
-
 console.log(retornaVerdadeiro);
+
+// Vai retornar apenas aqueles números maiores que 10
+const listaNumeros4 = [10, 20, 4, 77, 35, 0, 9];
+const maiorQue = listaNumeros4.filter((n) => {
+    return n > 10
+})
+console.log(maiorQue); // 20, 77, 35
+
+// Filter com objeto
+const estudos = [
+    {
+        materia: 'HTML',
+        hora: 4
+    },
+    {
+        materia: 'CSS',
+        hora: 6
+    },
+    {
+        materia: 'Design',
+        hora: 6
+    },
+    {
+        materia: 'JavaScript',
+        hora: 8
+    },
+]
+// Vai retornar apenas os objetos que tiverem a hora igual a 6
+const retornaMateria = estudos.filter((aula) => {
+    return aula.hora === 6 
+})
+
+console.log(retornaMateria);
