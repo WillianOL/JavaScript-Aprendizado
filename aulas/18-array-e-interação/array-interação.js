@@ -136,8 +136,15 @@ console.log(retornaIndex);
 
 // retorna o PRIMEIRO item correspondente ao return
 const listaNumeros3 = [5, 25, 88, 37, 40];
-const maiorQue10 = listaNumeros3.find((numbers) =>{
-    return numbers > 10
+const maiorQue10 = listaNumeros3.find((numbers) => {
+    return numbers > 10;
 }); // 25 - primeiro valor maior que 10
 console.log(maiorQue10);
 
+// Filtra e retorna os itens
+const carros = ["Gol", null, "Fusca", undefined, "Tesla", 0];
+const retornaVerdadeiro = carros.filter((itens) => {
+    return itens === "Gol"
+});
+
+console.log(retornaVerdadeiro);
