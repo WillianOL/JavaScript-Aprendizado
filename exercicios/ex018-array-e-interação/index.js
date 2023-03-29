@@ -9,7 +9,7 @@ const objetos = arrayCursos.map((item) => {
   const descricao = item.querySelector('p').innerText;
   const aula = item.querySelector('.aulas').innerText;
   const hora = item.querySelector('.horas').innerText;
-  // No ES6, quando o nome vareável é igual ao nome do parâmetro do objeto, não precisa esquever os dois
+  // No ES6, quando o nome vareável é igual ao nome do parâmetro do objeto, não precisa escrever os dois
   return {
     titulo,
     descricao,
