@@ -25,3 +25,19 @@ function nomePessoa(anoNascimento){
 }
 
 nomePessoa.call(pessoa, 2004) // Recebendo o referencial this.
+
+// O call se aplica a qualquer tipo de função, pois ele é um método de função
+const listaFrutas = ["Melão", "Manga", "Maçã", "Uva"];
+const listaPessoas = ["Willian", "Rebeca", "José", "Joana"]
+// Vai mostrar o nome das pessoas pois agora o referencial do forEach é a array de pessoas.
+listaFrutas.forEach.call(listaPessoas, (item) => {
+    console.log(item);
+})
+
+
+function PegarItens(seletor) {
+    this.element = document.querySelector(seletor);
+}
+
+const ul = new PegarItens('ul')
+console.log(li);
