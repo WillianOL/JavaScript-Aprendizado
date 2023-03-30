@@ -52,7 +52,7 @@ const listaItens = [
 ];
 console.log(listaItens.length); // 4 - numero de elementos
 console.log(listaItens[2].length); // 8 - número de letras pois o 3 elemento é uma string.
-console.log(listaItens[3]); // 2 - número de elementos do array
+console.log(listaItens[3].length); // 2 - número de elementos do array
 console.log(listaItens[3][1].preco); // 20000 - acessando o parâmetro do objeto
 
 // Métodos modificadores de arrays
@@ -77,12 +77,12 @@ console.log(removeInicio);
 
 console.log(listaCarros.reverse()); // Inverte a ordem da array
 
-listaCores01 = ["Azul", "vermelho", "verde"];
+const listaCores01 = ["Azul", "vermelho", "verde"];
 console.log(listaCores01);
 console.log(listaCores01.splice(1, 1, "Preto")); // Adiciona itens apartir do index passado, remove um número de itens passado dps do index(retorna ele).
 console.log(listaCores01);
 
-listaFrutas = ["item01", "item02", "item03"].fill("Jabuticaba", 1); // SImplismente preenche de acordo com o valor passado
+listaFrutas = ["item01", "item02", "item03"].fill("Jabuticaba", 1); // Preenche de acordo com o valor passado, começando do index passado.
 console.log(listaFrutas); // ['item01', 'Jabuticaba', 'Jabuticaba']
 
 // Métodos de acesso - não modificam a array.
