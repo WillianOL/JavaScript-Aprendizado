@@ -36,8 +36,19 @@ listaFrutas.forEach.call(listaPessoas, (item) => {
 
 
 function PegarItens(seletor) {
-    this.element = document.querySelector(seletor);
+    this.elemento = document.querySelector(seletor);
+}
+
+PegarItens.prototype.colocarClasse = function(classe) {
+    this.elemento.classList.add(classe)
 }
 
 const ul = new PegarItens('ul')
-console.log(li);
+console.log(ul.elemento);
+ul.colocarClasse('ativada');
+
+const li = {
+    elemento: document.querySelector('li'),
+}
+
+ul.colocarClasse.call(li, 'Ativadaa')
