@@ -13,15 +13,15 @@ console.log(juntarLetras.length); // retorna o total de argumentos da função.
 console.log(juntarLetras.name); // retorna o nome da função
 
 
-// Toda função tem como referencial o Constructor Function, fazendo o this dela herdar os métodos e propriedades do construtor.
+// Toda função tem como referencial o objeto Constructor Function, fazendo o this dela herdar os métodos e propriedades do construtor.
 // Com o .call() podemos mudar esse referencial, para um objeto por exemplo: 
 const pessoa = {
     nome: "Willian",
     idade: 18,
 }
 
-function nomePessoa(){
-    console.log(this.nome + " " + this.idade);
+function nomePessoa(anoNascimento){
+    console.log(this.nome + " " + this.idade + ' ' + anoNascimento);
 }
 
-nomePessoa.call(pessoa) // Recebendo o referencial this.
+nomePessoa.call(pessoa, 2004) // Recebendo o referencial this.
