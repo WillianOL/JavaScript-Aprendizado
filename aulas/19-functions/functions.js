@@ -50,6 +50,6 @@ ul.colocarClasse('ativadaUl'); // Acessando o método do prototype da função, 
 const newSelector = {
     elemento: document.querySelector('li'),
 }
-// Com o ".call()" foi mudado o referencial da função para o objeto newSelector, que contém o li do documento html.
+// Com o ".call()" foi mudado o referencial da função para o objeto newSelector, que contém o li do documento html. (o objeto tem que ser semelhante ao anterior).
 // Colocando a classe ativadaLi
 ul.colocarClasse.call(newSelector, 'ativadaLi')
