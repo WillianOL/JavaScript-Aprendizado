@@ -51,4 +51,4 @@ const li = {
     elemento: document.querySelector('li'),
 }
 
-ul.colocarClasse.call(li, 'Ativadaa')
+ul.colocarClasse.call(li, 'AtivadaLi')
