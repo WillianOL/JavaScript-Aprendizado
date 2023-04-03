@@ -60,3 +60,7 @@ const carros = ['BMW', 'Mostang', 'Chevete'];
 Array.prototype.mostrarCarros = function(){
     return console.log(this);
 }
+
+Array.prototype.pop.call(carros) // Vai remover "Chevete"
+carros.pop() // Mesma coisa da função de cima
+console.log(carros);
