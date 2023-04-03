@@ -39,15 +39,16 @@ function PegarItens(seletor) {
 }
 
 PegarItens.prototype.colocarClasse = function(classe) {
-    this.elemento.classList.add(classe)
-}
+    this.elemento.classList.add(classe);
+} // Novo método no prototype da função pegar itens.
 
-const ul = new PegarItens('ul')
+const ul = new PegarItens('ul'); // Argumento para a função pegar itens
 console.log(ul.elemento);
-ul.colocarClasse('ativada');
+ul.colocarClasse('ativadaUl'); // Acessando o método do prototype da função, para colocar a classe na constante ul
 
-const li = {
+const newSelector = {
     elemento: document.querySelector('li'),
 }
-
-ul.colocarClasse.call(li, 'AtivadaLi')
+// Com o ".call()" foi mudado o referencial da função para o objeto newSelector, que contém o li do documento html.
+// Colocando a classe ativadaLi
+ul.colocarClasse.call(newSelector, 'ativadaLi')
