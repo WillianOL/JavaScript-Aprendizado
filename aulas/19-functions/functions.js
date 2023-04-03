@@ -34,15 +34,16 @@ listaFrutas.forEach.call(listaPessoas, (item) => {
     console.log(item);
 })
 
+// EXEMPLO REAL
 function PegarItens(seletor) {
     this.elemento = document.querySelector(seletor);
 }
 
 PegarItens.prototype.colocarClasse = function(classe) {
     this.elemento.classList.add(classe);
-} // Novo método no prototype da função pegar itens.
+} // Novo método no prototype da função PegarItens.
 
-const ul = new PegarItens('ul'); // Argumento para a função pegar itens
+const ul = new PegarItens('ul'); // Argumento para a função PegarItens
 console.log(ul.elemento);
 ul.colocarClasse('ativadaUl'); // Acessando o método do prototype da função, para colocar a classe na constante ul
 
