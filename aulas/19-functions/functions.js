@@ -40,16 +40,23 @@ function PegarItens(seletor) {
 }
 
 PegarItens.prototype.colocarClasse = function(classe) {
+    console.log(this);
     this.elemento.classList.add(classe);
 } // Novo método no prototype da função PegarItens.
 
-const ul = new PegarItens('ul'); // Argumento para a função PegarItens
-console.log(ul.elemento);
-ul.colocarClasse('ativadaUl'); // Acessando o método do prototype da função, para colocar a classe na constante ul
+// const ul = new PegarItens('ul'); // Argumento para a função PegarItens
+// ul.colocarClasse('ativadaUl'); // Acessando o método do prototype da função, para colocar a classe na constante ul
 
 const newSelector = {
     elemento: document.querySelector('li'),
 }
 // Com o ".call()" foi mudado o referencial da função para o objeto newSelector, que contém o li do documento html. (o objeto tem que ser semelhante ao anterior).
 // Colocando a classe ativadaLi
-ul.colocarClasse.call(newSelector, 'ativadaLi')
+PegarItens.prototype.colocarClasse.call(newSelector, 'ativadaLi')
+
+
+const carros = ['BMW', 'Mostang', 'Chevete'];
+// Modificar o construtor principal não é uma boa prática. Feito com intuito experimental.
+Array.prototype.mostrarCarros = function(){
+    return console.log(this);
+}
