@@ -64,3 +64,11 @@ Array.prototype.mostrarCarros = function(){
 Array.prototype.pop.call(carros) // Vai remover "Chevete"
 carros.pop() // Mesma coisa da função de cima
 console.log(carros);
+
+const arrayLike = document.querySelectorAll('li') // Objetos que se parecem com array
+// Feito dessa forma pois o NodeList não possui o método filter
+const filtragem = Array.prototype.filter.call(arrayLike, (itens) => {
+    return itens.classList.contains('ativado')
+})
+
+console.log(filtragem);
