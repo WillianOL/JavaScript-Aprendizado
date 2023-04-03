@@ -21,10 +21,10 @@ const pessoa = {
 }
 
 function nomePessoa(anoNascimento){
-    console.log(this.nome + " " + this.idade + ' ' + anoNascimento);
+    console.log(this.nome + " " + this.idade + ' ' + anoNascimento); // usando o this para acessar os parâmetros do objeto pessoa
 }
 
-nomePessoa.call(pessoa, 2004) // Recebendo o referencial this.
+nomePessoa.call(pessoa, 2004) // Agora o referencial da função vai ser o objeto pessoa.
 
 // O call se aplica a qualquer tipo de função, pois ele é um método de função
 const listaFrutas = ["Melão", "Manga", "Maçã", "Uva"];
@@ -33,7 +33,6 @@ const listaPessoas = ["Willian", "Rebeca", "José", "Joana"]
 listaFrutas.forEach.call(listaPessoas, (item) => {
     console.log(item);
 })
-
 
 function PegarItens(seletor) {
     this.elemento = document.querySelector(seletor);
