@@ -72,3 +72,18 @@ const filtragem = Array.prototype.filter.call(arrayLike, (itens) => {
 })
 
 console.log(filtragem);
+
+// .apply()
+//Funciona da mesma forma que o call(), a única diferença vai ser que ele pode receber uma lista de argumentos(array), enquanto o call recebe cada argumento separado.
+const listaNumeros = [10, 120, 5, -10, 22, 0];
+Math.min.apply(null, listaNumeros) // --> array
+Math.min.call(null, 10, 120, 5, -10, 22, 0) // --> argumentos separados.
+
+const lista02 = document.querySelectorAll('li');
+
+function possuiAtivado(itemLista) {
+    return itemLista.classList.contains('ativado')
+}
+
+const exemploApply = Array.prototype.filter.apply(lista02, [possuiAtivado]); // array
+const exemploCall = Array.prototype.filter.call(lista02, possuiAtivado); // argumento separado
