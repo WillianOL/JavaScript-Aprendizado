@@ -82,7 +82,7 @@ console.log(listaCores01);
 console.log(listaCores01.splice(1, 1, "Preto")); // Adiciona itens apartir do index passado, remove um número de itens passado dps do index(retorna ele).
 console.log(listaCores01);
 
-listaFrutas = ["item01", "item02", "item03"].fill("Jabuticaba", 1); // Preenche de acordo com o valor passado, começando do index passado.
+listaFrutas = ["item01", "item02", "item03"].fill("Jabuticaba", 1); // Preenche com o valor, começando do index passado.
 console.log(listaFrutas); // ['item01', 'Jabuticaba', 'Jabuticaba']
 
 // Métodos de acesso - não modificam a array.
