@@ -95,3 +95,6 @@ const exemploBind = Array.prototype.filter.bind(lista02, (item) => {
 })
 
 console.log(exemploBind()); // É preciso executar a função para sair o resultado do bind
+
+// Macete para encurtar a função
+const escolheLista = document.querySelectorAll.bind(document) // Assim pode-se escolher qual elemento vai ser passado
