@@ -87,3 +87,11 @@ function possuiAtivado(itemLista) {
 
 const exemploApply = Array.prototype.filter.apply(lista02, [possuiAtivado]); // array
 const exemploCall = Array.prototype.filter.call(lista02, possuiAtivado); // argumento separado
+
+// Diferente do call e do apply, o bind vai retornar uma função, mas não vai executar ela.
+
+const exemploBind = Array.prototype.filter.bind(lista02, (item) => {
+    return item
+})
+
+console.log(exemploBind()); // É preciso executar a função para sair o resultado do bind
