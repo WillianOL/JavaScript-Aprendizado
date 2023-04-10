@@ -1,5 +1,5 @@
 // Toda função é criada apartir do construtor function, herdando seus métodos e propriedades.
-function somarNumeros(n1, n2) { /// --> Parâmetos
+function somarNumeros(n1, n2) { // --> Parâmetos
     return n1 + n2;
 }
 // Sempre prestar atenção nos valores retornados da função
@@ -92,9 +92,19 @@ const exemploCall = Array.prototype.filter.call(lista02, possuiAtivado); // argu
 
 const exemploBind = Array.prototype.filter.bind(lista02, (item) => {
     return item
-})
+});
 
 console.log(exemploBind()); // É preciso executar a função para sair o resultado do bind
 
 // Macete para encurtar a função
 const escolheLista = document.querySelectorAll.bind(document) // Assim pode-se escolher qual elemento vai ser passado
+
+const perfilPessoa = {
+    nome: 'Willian',
+    idade: 18,
+    quemSouEu: function(cidade){
+        return `Me chamo ${this.nome}, tenho ${this.idade} anos e nasci em ${cidade}`
+    }
+}
+
+console.log(perfilPessoa.quemSouEu('Maceió'));
