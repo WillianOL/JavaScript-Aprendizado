@@ -108,3 +108,11 @@ const perfilPessoa = {
 }
 
 console.log(perfilPessoa.quemSouEu('Maceió'));
+
+const perfilPessoa2 = {
+    nome: "Pedro",
+    idade: 20,
+}
+
+const exemploBind2 = perfilPessoa.quemSouEu.bind(perfilPessoa2, 'Pernambuco')
+console.log(exemploBind2());
