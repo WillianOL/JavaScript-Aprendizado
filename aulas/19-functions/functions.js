@@ -109,10 +109,10 @@ const perfilPessoa = {
 
 console.log(perfilPessoa.quemSouEu('Maceió'));
 
-const perfilPessoa2 = {
+const perfilPedro = {
     nome: "Pedro",
     idade: 20,
 }
-
-const exemploBind2 = perfilPessoa.quemSouEu.bind(perfilPessoa2, 'Pernambuco')
+// Trocando o referencial de this para o novo objeto(perfilPedro), e executanto a função do objeto perfilPessoa.
+const exemploBind2 = perfilPessoa.quemSouEu.bind(perfilPedro, 'Pernambuco') 
 console.log(exemploBind2());
