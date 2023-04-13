@@ -16,15 +16,15 @@ console.log(pessoa2.idade);
 const objeto = {
     nome: "Claudio",
     pegarPalavra(value) {
-        this.palavra = value
-        return this
+        this.palavra = value;
+        return this;
     },
-    juntar(){
-        return `${this.nome}, a sua palavra "${this.palavra}" é legal`
+    juntar() {
+        return `${this.nome}, a sua palavra "${this.palavra}" é legal`;
     },
-}
+};
 
-const willian = Object.create(objeto)
-console.log(willian.pegarPalavra("Pessego").juntar()); 
-
+const willian = Object.create(objeto);
+willian.nome = "Willian";
+console.log(willian.pegarPalavra("Pessego").juntar()); // Willian, a sua palavra "Pessego" é legal
 
