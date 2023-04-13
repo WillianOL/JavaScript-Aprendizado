@@ -12,7 +12,7 @@ const pessoa2 = new Object({
 console.log(pessoa.nome);
 console.log(pessoa2.idade);
 
-// Com o .create() pode-se fazer outro objeto herdar os métodos e propriedades que você criaou em outro objeto anterior
+// Com o .create() pode-se fazer outro objeto herdar os métodos e propriedades que você criou em outro objeto anterior
 const objeto = {
     nome: "Claudio",
     pegarPalavra(value) {
@@ -26,3 +26,5 @@ const objeto = {
 
 const willian = Object.create(objeto)
 console.log(willian.pegarPalavra("Pessego").juntar()); 
+
+
