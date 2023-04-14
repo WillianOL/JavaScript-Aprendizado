@@ -12,7 +12,7 @@ const pessoa2 = new Object({
 console.log(pessoa.nome);
 console.log(pessoa2.idade);
 
-// Com o .create() pode-se fazer outro objeto herdar os métodos e propriedades que você criou em outro objeto anterior
+// Com o .create() pode-se criar um objeto apartir de outro já criado herdando seus métodos e propriedades
 const objeto = {
     nome: "Claudio",
     pegarPalavra(value) {
@@ -28,6 +28,7 @@ const willian = Object.create(objeto);
 willian.nome = "Willian";
 console.log(willian.pegarPalavra("Pessego").juntar()); // Willian, a sua palavra "Pessego" é legal
 
+//Com o Object.assign é possivel fazer um objeto herdar os métodos e pripriedades de outro objeto, evitando repetições
 const mesa = {
     limparMesa() {
         return `${this.nome} limpou a mesa`
@@ -50,3 +51,18 @@ Object.assign(funcionario1, mesa)
 Object.assign(funcionario2, mesa)
 
 console.log(funcionario1, funcionario2);
+
+
+// defineProperties - Define novas propriedades ao objeto, a diferença é que podemos modificar as caracteristicas dessa propriedades
+const carro = {}
+
+Object.defineProperties(carro, {
+    marca: {
+        value: "Honda",
+        writable: false,
+        configurable: false, 
+    }
+})
+
+carro.marca = "Ferrari"
+console.log(carro);
