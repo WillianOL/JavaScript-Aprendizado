@@ -58,11 +58,11 @@ const carro = {}
 
 Object.defineProperties(carro, {
     marca: {
-        value: "Honda",
-        writable: false,
-        configurable: false, 
+        value: "Honda", // define um valor
+        writable: false, // define se pode escrever por sima do valor original
+        configurable: false, // define se é possivel modificar o valor
     }
 })
 
-carro.marca = "Ferrari"
+carro.marca = "Ferrari" // Não vai acontecer nada, pois está como: writable false
 console.log(carro);
