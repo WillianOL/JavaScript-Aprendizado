@@ -53,7 +53,7 @@ Object.assign(funcionario2, mesa)
 console.log(funcionario1, funcionario2);
 
 
-// defineProperties - Define novas propriedades ao objeto, a diferença é que podemos modificar as caracteristicas dessa propriedades
+// defineProperties - Define novas propriedades ao objeto, a diferença é que podemos modificar as caracteristicas dessas propriedades
 const carro = {}
 
 Object.defineProperties(carro, {

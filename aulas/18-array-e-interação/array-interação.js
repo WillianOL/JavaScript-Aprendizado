@@ -58,7 +58,7 @@ const minutosAula = aulas.map((item) => item.min);
 console.log(minutosAula);
 
 // Mesma coisa do de cima
-const nomesAula = (aulas) => aulas.nome; // Somente uma linha de código usando "=>", por isso não foi usado "()" nem "{}";
+const nomesAula = (aulas) => aulas.nome; // Somente uma linha de código usando "=>", por isso não foi usado "()" nem "{}" ou o return;
 const arrayNomeAulas = aulas.map(nomesAula); // retorna a array
 console.log(arrayNomeAulas);
 
