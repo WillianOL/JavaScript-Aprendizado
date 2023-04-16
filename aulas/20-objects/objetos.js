@@ -62,7 +62,7 @@ Object.defineProperties(carro, {
         writable: false, // define se pode escrever por sima do valor original
         configurable: false, // define se é possivel modificar/configurar o valor
     }
-})
+}) // Por padrão todas esses configurações estão como false
 
 carro.marca = "Ferrari" // Não vai acontecer nada, pois está como: writable false
 console.log(carro);
