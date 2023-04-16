@@ -71,11 +71,10 @@ const idade = {};
 Object.defineProperties(idade, {
     anos: {
         get() {
-            return this.anos;
+            return this._anos;
         },
-
-        set(value) {
-            this.anos = value * 10;
+        set(valor) {
+            this._anos = valor * 10;
         },
     },
 });
