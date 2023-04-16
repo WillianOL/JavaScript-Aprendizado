@@ -60,7 +60,7 @@ Object.defineProperties(carro, {
     marca: {
         value: "Honda", // define um valor
         writable: false, // define se pode escrever por sima do valor original
-        configurable: false, // define se é possivel modificar o valor
+        configurable: false, // define se é possivel modificar/configurar o valor
     }
 })
 
