@@ -66,15 +66,20 @@ Object.defineProperties(carro, {
 carro.marca = "Ferrari"; // Não vai acontecer nada, pois está como: writable false
 console.log(carro);
 
+// Get e Set
 const idade = {};
 
 Object.defineProperties(idade, {
+    // Dentro da propriedade do objeto, pode-se definir o get e set dela
     anos: {
-        get() {
+        get() { // Pega um valor e retorna ele para o set
             return this._anos;
         },
-        set(valor) {
+        set(valor) { // No set, podemos definir o que acontece com esse valor.
             this._anos = valor * 10;
         },
     },
 });
+
+idade.anos = 10; // idade.anos = 100(multiplicou o valor de get no set por 10)
+
