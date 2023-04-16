@@ -31,38 +31,51 @@ console.log(willian.pegarPalavra("Pessego").juntar()); // Willian, a sua palavra
 //Com o Object.assign é possivel fazer um objeto herdar os métodos e pripriedades de outro objeto, evitando repetições
 const mesa = {
     limparMesa() {
-        return `${this.nome} limpou a mesa`
+        return `${this.nome} limpou a mesa`;
     },
 
     colocarMesa() {
-        return `${this.nome} colocou a mesa`
+        return `${this.nome} colocou a mesa`;
     },
 };
 
 const funcionario1 = {
     nome: "Claudio",
-}
+};
 
 const funcionario2 = {
-    nome: "Alberto"
-}
+    nome: "Alberto",
+};
 
-Object.assign(funcionario1, mesa)
-Object.assign(funcionario2, mesa)
+Object.assign(funcionario1, mesa);
+Object.assign(funcionario2, mesa);
 
 console.log(funcionario1, funcionario2);
 
-
 // defineProperties - Define novas propriedades ao objeto, a diferença é que podemos modificar as caracteristicas dessas propriedades
-const carro = {}
+const carro = {};
 
 Object.defineProperties(carro, {
     marca: {
         value: "Honda", // define um valor
         writable: false, // define se pode escrever por sima do valor original
         configurable: false, // define se é possivel modificar/configurar o valor
-    }
-}) // Por padrão todas esses configurações estão como false
+    },
+}); // Por padrão todas esses configurações estão como false
 
-carro.marca = "Ferrari" // Não vai acontecer nada, pois está como: writable false
+carro.marca = "Ferrari"; // Não vai acontecer nada, pois está como: writable false
 console.log(carro);
+
+const idade = {};
+
+Object.defineProperties(idade, {
+    anos: {
+        get() {
+            return this.anos;
+        },
+
+        set(value) {
+            this.anos = value * 10;
+        },
+    },
+});
