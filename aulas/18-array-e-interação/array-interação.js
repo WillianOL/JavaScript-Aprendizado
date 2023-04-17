@@ -63,7 +63,8 @@ const arrayNomeAulas = aulas.map(nomesAula); // retorna a array
 console.log(arrayNomeAulas);
 
 const listaNumeros = [20, 5, 10, 30];
-// No reduce temos um novo argumento que é o acumulador, onde ele é o valor anterior.
+
+// No reduce temos um novo argumento que é o acumulador, onde ele é o valor da interação anterior.
 const acumular = listaNumeros.reduce((a, item) => {
     console.log(a, item);
     return a + item;
