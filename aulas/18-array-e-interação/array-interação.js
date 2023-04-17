@@ -112,7 +112,7 @@ const listaFrutas = ["Maçã", "Uva", "Limão", "Melão"];
 const interacao = listaFrutas.reduceRight((acl, item) => acl + " " + item);
 console.log(interacao); // Melão Limão Uva Maçã.
 
-// Verifica se um item existe dentro da array e retorna um valor booleano
+// Verifica se pelo menos um dos return da interação é truthy(retorna um valor booleano).
 const temLimao = listaFrutas.some((item) => {
     return item === "Limão";
 });
