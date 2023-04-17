@@ -71,6 +71,7 @@ const acumular = listaNumeros.reduce((a, item) => {
 }, 0);
 
 console.log(`Valor total foi de ${acumular}`);
+// Se não passarmos nada como segundo valor do reduce, ele irá pular para a segunda interação, fazendo assim o valor do acumulador ser o primeiro item da array.
 
 const listaNumeros2 = [10, 33, 4, 55, 22, 44, 0];
 // Usando o reduce para retornar o maior valor da array
