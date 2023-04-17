@@ -72,7 +72,7 @@ const idade = {};
 Object.defineProperties(idade, {
     // Dentro da propriedade do objeto, pode-se definir o get e set dela
     anos: {
-        get() { // Pega um valor e retorna ele para o set
+        get() { // Pega o valor
             return this._anos;
         },
         set(valor) { // No set, podemos definir o que acontece com esse valor.
