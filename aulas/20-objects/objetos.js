@@ -72,10 +72,12 @@ const idade = {};
 Object.defineProperties(idade, {
     // Dentro da propriedade do objeto, pode-se definir o get e set dela
     anos: {
-        get() { // Pega o valor
+        get() {
+            // Pega o valor
             return this._anos;
         },
-        set(valor) { // No set, podemos definir o que acontece com esse valor.
+        set(valor) {
+            // No set, podemos definir o que acontece com esse valor.
             this._anos = valor * 10;
         },
     },
@@ -85,3 +87,8 @@ idade.anos = 10; // idade.anos = 100(multiplicou o valor de get no set por 10)
 
 // Lista os métodos e propriedades de um objeto, com suas características
 console.log(Object.getOwnPropertyDescriptors(Object));
+
+const pessoa3 = {
+    nome: "Willian",
+    idade: 18,
+};
