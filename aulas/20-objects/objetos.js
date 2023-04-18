@@ -100,3 +100,11 @@ console.log(Object.values(pessoa3));
 
 // Obj.entries - retorna um array com as chaves e seus valores
 console.log(Object.entries(pessoa3));
+
+// Object.is() - verifica se dois objetos são iguais, retornando true ou false
+const carro1 = ['Ford', 'Monsa']
+const carro2 = ['Ford', 'Monsa']
+console.log(Object.is(carro1, carro2)); // false - dois objetos diferentes
+
+const novoCarro = carro1;
+console.log(Object.is(carro1, novoCarro)); // true
