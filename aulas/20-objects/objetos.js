@@ -83,3 +83,5 @@ Object.defineProperties(idade, {
 
 idade.anos = 10; // idade.anos = 100(multiplicou o valor de get no set por 10)
 
+
+console.log(Object.getOwnPropertyDescriptor(Array));
