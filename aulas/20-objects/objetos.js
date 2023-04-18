@@ -92,3 +92,11 @@ const pessoa3 = {
     nome: "Willian",
     idade: 18,
 };
+// Obj.key - Retorna as chaves/propriedades do objeto
+console.log(Object.keys(pessoa3));
+
+// Obj.value - Retorna os valores das chaves/pripriedades do objeto
+console.log(Object.values(pessoa3));
+
+// Obj.entries - retorna um array com as chaves e seus valores
+console.log(Object.entries(pessoa3));
