@@ -129,7 +129,7 @@ const numbers = [12, 10, 7, 22, 20, 39];
 const mairQue5 = numbers.every((n) => n > 5);
 console.log(mairQue5); // true -  todos os números são maiores que 5
 
-// Retorna o index do valor correspondente ao return
+// Retorna o index do primeiro valor correspondente ao return
 const listaTrabalhos = ["Programador", "Designer", "SEO"];
 const retornaIndex = listaTrabalhos.findIndex((itens) => {
     return itens === "Designer";
