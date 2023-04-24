@@ -110,3 +110,6 @@ const novoCarro = carro1;
 console.log(Object.is(carro1, novoCarro)); // true
 
 // Todo tipo de dado em JavaScript vai herdar os métodos e propriedades do construtor de Objeto
+// {}.constructor - vai dar o tipo de construtor do objeto
+const pessoas = ["Carlos", "Willian", "João"];
+pessoas.constructor // Construtor Array
