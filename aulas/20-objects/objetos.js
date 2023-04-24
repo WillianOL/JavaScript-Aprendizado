@@ -108,3 +108,5 @@ console.log(Object.is(carro1, carro2)); // false - dois objetos diferentes
 
 const novoCarro = carro1;
 console.log(Object.is(carro1, novoCarro)); // true
+
+// Todo tipo de dado em JavaScript vai herdar os métodos e propriedades do construtor de Objeto
