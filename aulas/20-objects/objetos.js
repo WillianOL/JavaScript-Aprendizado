@@ -113,3 +113,13 @@ console.log(Object.is(carro1, novoCarro)); // true
 // {}.constructor - vai dar o tipo de construtor do objeto
 const pessoas = ["Carlos", "Willian", "João"];
 pessoas.constructor // Construtor Array
+
+// hasOwnProperty - Verifica se possui a propriedade  e retorna um valor booleano(essa propriedade deve ser doretamente criada do objeto e não do protótipo).
+const metodos = {
+    correr() {
+        return "Você correu"
+    }
+}
+
+console.log(metodos.hasOwnProperty("map")); // false
+console.log(metodos.hasOwnProperty("correr")); // true - propriedade criada diretamente no objeto
