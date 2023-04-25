@@ -114,7 +114,7 @@ console.log(Object.is(carro1, novoCarro)); // true
 const pessoas = ["Carlos", "Willian", "João"];
 pessoas.constructor // Construtor Array
 
-// hasOwnProperty - Verifica se possui a propriedade  e retorna um valor booleano(essa propriedade deve ser doretamente criada do objeto e não do protótipo).
+// hasOwnProperty - Verifica se possui a propriedade  e retorna um valor booleano(essa propriedade deve ser diretamente criada do objeto e não do protótipo).
 const metodos = {
     correr() {
         return "Você correu"
