@@ -126,3 +126,8 @@ console.log(metodos.hasOwnProperty("correr")); // true - propriedade criada dire
 
 // propertyIsEnumerable - Verifica a propriedade é numeravel
 console.log(metodos.propertyIsEnumerable("correr"));
+
+// isPrototypeOf - Verifica se é o prototipo do valor passado
+const planetas = ["Terra", "Marte", "Venus", "Jupter"];
+
+console.log(Array.prototype.isPrototypeOf(planetas)); // true - pois prototipo da array planetas é array 
