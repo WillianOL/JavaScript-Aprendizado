@@ -121,5 +121,5 @@ const metodos = {
     }
 }
 
-console.log(metodos.hasOwnProperty("map")); // false
+console.log(metodos.hasOwnProperty("map")); // false - propriedade do prototype do construtor Array
 console.log(metodos.hasOwnProperty("correr")); // true - propriedade criada diretamente no objeto
