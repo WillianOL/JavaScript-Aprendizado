@@ -102,8 +102,8 @@ console.log(Object.values(pessoa3));
 console.log(Object.entries(pessoa3));
 
 // Object.is() - verifica se dois objetos são iguais, retornando true ou false
-const carro1 = ['Ford', 'Monsa']
-const carro2 = ['Ford', 'Monsa']
+const carro1 = ["Ford", "Monsa"];
+const carro2 = ["Ford", "Monsa"];
 console.log(Object.is(carro1, carro2)); // false - dois objetos diferentes
 
 const novoCarro = carro1;
@@ -112,14 +112,14 @@ console.log(Object.is(carro1, novoCarro)); // true
 // Todo tipo de dado em JavaScript vai herdar os métodos e propriedades do construtor de Objeto
 // {}.constructor - vai dar o tipo de construtor do objeto
 const pessoas = ["Carlos", "Willian", "João"];
-pessoas.constructor // Construtor Array
+pessoas.constructor; // Construtor Array
 
 // hasOwnProperty - Verifica se possui a propriedade  e retorna um valor booleano(essa propriedade deve ser diretamente criada do objeto e não do protótipo).
 const metodos = {
     correr() {
-        return "Você correu"
-    }
-}
+        return "Você correu";
+    },
+};
 
 console.log(metodos.hasOwnProperty("map")); // false - propriedade do prototype do construtor Array
 console.log(metodos.hasOwnProperty("correr")); // true - propriedade criada diretamente no objeto
@@ -130,4 +130,10 @@ console.log(metodos.propertyIsEnumerable("correr"));
 // isPrototypeOf - Verifica se é o prototipo do valor passado
 const planetas = ["Terra", "Marte", "Venus", "Jupter"];
 
-console.log(Array.prototype.isPrototypeOf(planetas)); // true - pois prototipo da array planetas é array 
+console.log(Array.prototype.isPrototypeOf(planetas)); // true - pois prototipo da array planetas é array
+
+// toString - Transforma um dado em sting ou retorna o tipo do objeto
+const palavra2 = "Hello, world!";
+const somar = (n1, n2) => {
+    return n1 + n2;
+};
