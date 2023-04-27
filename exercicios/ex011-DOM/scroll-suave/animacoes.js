@@ -5,3 +5,7 @@ console.log(Object.prototype.toString.call(h1));
 // Facilita a interação entre o DOM e o JavaScript
 const div = document.querySelector("div");
 console.log(div.dataset.height);
+
+// Mesma forma de selecionar, porém através de outros seletores(parâmetros)
+const div2 = document.querySelector("[data-background]")
+const div3 = document.querySelector("[data-height='200']")
