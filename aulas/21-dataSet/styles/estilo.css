@@ -95,6 +95,7 @@ body{
     height: 370px;
     overflow-y: scroll;
     grid-column: 2;
+    cursor: pointer;
 }
 
 .listaAnimais::-webkit-scrollbar{
@@ -145,6 +146,35 @@ body{
     font-family: Helvetica, Arial;
     margin-bottom: .5rem;
     margin-left: 30px;
+    display: none;
+}
+
+.animais{
+    display: none;
+}
+
+.ativado{
+    display: block;
+    animation: show 0.7s ease forwards;
+}
+
+.fagAnimais p.showP{
+    display: block;
+    animation: show 0.7s ease forwards;
+}
+
+
+@keyframes show{
+    from{
+        opacity: 0;
+        max-height: 0;
+        transform: translate(-100px);
+    }
+
+    to{
+        max-height: 200px;
+        opacity: 1;
+    }
 }
 
 .mapa{

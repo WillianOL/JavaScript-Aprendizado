@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles/estilo.css">
 </head>
 <body>
-    <nav class="menu">
+    <div data-background="#333" data-height="200">Apenas uma div</div>
+    <nav class="menu menu-js">
         <ul>
             <li><a href="#animais">Animais</a></li>
             <li><a href="#faq">Faq</a></li>
@@ -19,16 +20,16 @@
 
     <section id="animais" class="grid-section">
         <h1 class="titulo">Animais <br> Fantásticos</h1>
-        <ul class="listaAnimais">
+        <ul class="listaAnimais js-listaAnimais">
             <li><img src="img/imagem1.jpg"></li>
-            <li><img src="img/imagem2.jpg" class="img2"></li>
+            <li><img src="img/imagem2.jpg"></li>
             <li><img src="img/imagem3.jpg"></li>
             <li><img src="img/imagem4.jpg"></li>
             <li><img src="img/imagem5.jpg"></li>
             <li><img src="img/imagem6.jpg"></li>
         </ul>
-        <div class="descricaoAnimais">
-            <section class="animais" id="animais">
+        <div class="descricaoAnimais js-descricao-tabs">
+            <section class="animais sempreAtivo" id="animais">
                 <h2>Raposa</h2>
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
                     caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
@@ -87,17 +88,17 @@
 
     <section id="faq" class="grid-section">
         <h1 class="titulo">FAQ</h1>
-        <div class="fagAnimais">
+        <div class="fagAnimais js-showAnimais">
             <h2>Qual a idade dos animais?</h2>
-            <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+            <p class="paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
                 caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
             <h2>Eles são fantásticos?</h2>
-            <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+            <p class="paragrafo">Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
             <h2>Qual a diferença?</h2>
-            <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
+            <p class="paragrafo">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio,
                 caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
             <h2>Como proteger?</h2>
-            <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+            <p class="paragrafo">Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
         </div>
     </section>
 
@@ -120,7 +121,7 @@
         <p>Todos os direitos reservados.</p>
     </footer>
 
-    <script src="dataSet.js"></script>
-    <script src="traversing-manipulação.js"></script>
+    <script src="scroll-suave.js"></script>
+    <script src="animacoes.js"></script>
 </body>
 </html>
