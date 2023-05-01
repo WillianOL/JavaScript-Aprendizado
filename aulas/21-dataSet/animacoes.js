@@ -10,3 +10,7 @@ console.log(div.dataset.height);
 // Mesma forma de selecionar, porém através de outros seletores(parâmetros)
 const div2 = document.querySelector("[data-background]")
 const div3 = document.querySelector("[data-height='200']")
+
+// Criando uma nova propriedade
+div.dataset.pintura = "#f34f";
+console.log(div.dataset.pintura);
