@@ -1,5 +1,5 @@
-const menuClick = document.querySelectorAll('.js-listaAnimais img');
-const descricaoAnimais = document.querySelectorAll('.js-descricao-tabs section');
+const menuClick = document.querySelectorAll('[data-animais="lista"] img');
+const descricaoAnimais = document.querySelectorAll('[data-tans="descricao"] section');
 descricaoAnimais[0].classList.add('ativado'); // Adiciona o conteúdo para não ficar sem nada inicialmente
 
 function initDescricao(){
@@ -23,7 +23,7 @@ function initDescricao(){
 initDescricao();
 
 function initInfo() {
-    const faqBtns = document.querySelectorAll('.js-showAnimais h2');
+    const faqBtns = document.querySelectorAll('[data-show="animais"] h2');
     const showP = 'showP' // Definindo a classe CSS em uma constante para uma futura modificação
 
     faqBtns[0].nextElementSibling.classList.add(showP); // Deixa o primeiro item visível na tela.
