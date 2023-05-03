@@ -16,3 +16,7 @@ div.dataset.pintura = "#f34f";
 console.log(div.dataset.pintura);
 
 // Data-set X Class - O data-set evita conflitos com as classes CSS, além de deixar a estrutura da tag mais organizada
+
+// Nomenclatura - os atributos não podem ser nomeados com "-", então o dataset trnasforma meio que em um camalCase
+div.dataset.colorBottom = "#2F9"
+console.log(div.dataset);
