@@ -14,3 +14,5 @@ const div3 = document.querySelector("[data-height='200']");
 // Criando uma nova propriedade
 div.dataset.pintura = "#f34f";
 console.log(div.dataset.pintura);
+
+// Data-set X Class - O data-set evita conflitos com as classes CSS, além de deixar a estrutura da tag mais organizada
