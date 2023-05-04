@@ -9,4 +9,5 @@ initInfo();
 diversos.somar(50, 4);
 diversos.multiplicarPor5(5)
 
+console.log(diversos.string);
 console.log(diversos.senha);

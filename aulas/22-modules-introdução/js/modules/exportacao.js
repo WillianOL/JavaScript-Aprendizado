@@ -7,3 +7,4 @@ export function multiplicarPor5(n){
 }
 
 export const senha = 392923882;
+export const string = "Hello, world!"
