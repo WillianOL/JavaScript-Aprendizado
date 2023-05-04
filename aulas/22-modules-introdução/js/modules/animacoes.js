@@ -37,7 +37,7 @@ function initInfo() {
 }
 initInfo();
 
-function iniScrollSuave() {
+export default function iniScrollSuave() {
     const menuLinks = document.querySelectorAll('.menu-js a[href^="#"]'); // Selecionando todos os links internos.
 
     function scrollParaSection(event) {
