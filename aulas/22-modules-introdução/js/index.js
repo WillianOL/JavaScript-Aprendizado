@@ -6,5 +6,5 @@ import { somar, multiplicarPor5 } from "./modules/numbersOperation.js";
 iniScrollSuave();
 initDescricao();
 initInfo();
-
-console.log(somar(5, 10));
+somar(50, 4);
+multiplicarPor5(5)
