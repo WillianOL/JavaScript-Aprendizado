@@ -1,4 +1,4 @@
-function initInfo() {
+export default function initInfo() {
     const faqBtns = document.querySelectorAll('.js-showAnimais h2');
     const showP = 'showP' // Definindo a classe CSS em uma constante para uma futura modificação
 
@@ -12,5 +12,3 @@ function initInfo() {
     item.addEventListener('click', mostrarInfoFaq);
     })
 }
-initInfo();
-
