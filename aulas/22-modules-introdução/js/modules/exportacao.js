@@ -9,3 +9,8 @@ export function multiplicarPor5(n){
 // Pode-se exportar qualquer tipo de dado
 export const senha = 392923882;
 export const string = "Hello, world!"
+export const pessoa = {
+    nome: "Willian",
+    idade: 18,
+}
+export const cores = ["Azul", "Preto", "Vermelho"];
