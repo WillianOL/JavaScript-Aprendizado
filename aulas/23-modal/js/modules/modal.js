@@ -6,24 +6,20 @@ const containerModal = document.querySelector('[data-modal="conteiner"]')
 const btnAbrir = document.querySelector('[data-modal="abrir"]')
 const btnFechar = document.querySelector('[data-modal="fechar"]')
 
-if(containerModal && btnAbrir && btnFechar){
-    function abrirModal(event) {
+if(containerModal && btnAbrir && btnFechar){   
+    function toggleModal(event) {
         event.preventDefault();
-        containerModal.classList.add('ativo')
-    }
-    
-    function fecharModal() {
-        containerModal.classList.remove('ativo')
+        containerModal.classList.toggle('ativo')
     }
     
     function fecharClickForaModal(event) {
         if(event.target === this){
-            fecharModal(event);
+            toggleModal(event);
         }
     }
     
-    btnAbrir.addEventListener("click", abrirModal);
-    btnFechar.addEventListener("click", fecharModal);
+    btnFechar.addEventListener("click", toggleModal);
+    btnAbrir.addEventListener("click", toggleModal);
     containerModal.addEventListener("click", fecharClickForaModal)
 }
 
