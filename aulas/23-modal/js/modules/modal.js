@@ -13,8 +13,15 @@ function abrirModal(event) {
 }
 
 function fecharModal() {
+    containerModal.classList.remove('ativo')
+}
 
+function fecharClickForaModal(event) {
+    if(event.target === this){
+        fecharModal(event);
+    }
 }
 
 btnAbrir.addEventListener("click", abrirModal);
 btnFechar.addEventListener("click", fecharModal);
+containerModal.addEventListener("click", fecharClickForaModal)
