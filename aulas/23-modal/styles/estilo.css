@@ -351,7 +351,7 @@ ul {
     font-family: monospace;
     font-weight: bold;
     font-size: .875rem;
-    max-width: 150px;
+    max-width: 200px;
     border-radius: 2px;
     animation: tooltipAnimation .3s ease;
     padding: 10px;
