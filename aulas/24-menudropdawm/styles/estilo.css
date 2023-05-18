@@ -386,6 +386,7 @@ ul {
     top: 38px;
     background: #E54;
     border: 2px solid #333;
+    animation: dropDawnMenu .3s ease forwards;
     z-index: 200;
 }
 
@@ -402,4 +403,16 @@ ul {
 
 .dropDawnMenu li a:hover{
     color: white;
+}
+
+@keyframes dropDawnMenu {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
