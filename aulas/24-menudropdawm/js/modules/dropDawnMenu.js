@@ -11,16 +11,18 @@ allDropMenus.forEach((menu) => {
 
 function handleClick(event) {
     event.preventDefault();
-    console.log(this);
-    this.classList.toggle("ativo")
-    clickOutSide()
+    this.classList.add("ativo")
+    clickOutSide(this, () => {
+        this.classList.remove("ativo")
+    } )
 }
 
-function clickOutSide() {
+function clickOutSide(element, callback) {
     const html = document.documentElement;
     html.addEventListener("click", handleOutSideClick)
-
     function handleOutSideClick(event) {
-        console.log(event);
+        if(!element.contains(event.target)){
+            callback();    
+        }
     }
 }
