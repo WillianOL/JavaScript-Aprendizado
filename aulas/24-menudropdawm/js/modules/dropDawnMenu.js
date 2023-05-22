@@ -21,7 +21,8 @@ export default function initDropDawnMenu() {
         html.addEventListener("click", handleOutSideClick)
         function handleOutSideClick(event) {
             if(!element.contains(event.target)){
-                callback();    
+                html.removeEventListener("click", handleOutSideClick)
+                callback();
             }
         }
     }
