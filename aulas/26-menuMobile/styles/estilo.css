@@ -419,9 +419,10 @@ ul {
 
 [data-menu="button"]{
     display: none;
+    
 }
 
-@media (max-width: 700px){
+@media (max-width: 800px){
     [data-menu="button"]{
         display: block;
         background-color: #222;
@@ -431,7 +432,47 @@ ul {
         text-transform: uppercase;
         font-family: monospace;
         font-weight: bold;
+        display: flex;
+        gap: 5px;
         color: white;
+        align-items: center;
         cursor: pointer;
+        position: relative;
+        z-index: 1000;
+    }
+
+    [data-menu="button"]::before{
+        content: " ";
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background-color: white;
+        box-shadow: 0px -4px white, 0 4px white;
+        transition: transform .3s ease;
+    }
+
+    [data-menu="button"].ativo::before{
+        transform: rotate(90deg);
+    }
+
+    #menu{
+        display: none;
+        position: absolute;
+        background-color: #fb5;
+        width: 160px;
+        top: 0px;
+        padding: 60px 0px 20px 0px;
+        z-index: 200;
+        box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, .3);
+    }
+
+    #menu.ativo{
+        display: block;
+        animation: show .3s ease;
+    }
+
+    .dropDawnMenu{
+        position: static;
+        border: none;
     }
 }
