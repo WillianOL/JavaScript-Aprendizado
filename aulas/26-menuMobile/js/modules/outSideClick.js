@@ -1,9 +1,17 @@
-export default function clickOutSide(element, callback) {
+export default function clickOutSide(element, events, callback) {
     const html = document.documentElement;
-    html.addEventListener("click", handleOutSideClick)
+    const outside = "data-outside"
+
+    if(!element.hasAttribute(outside)) {
+        events.forEach((userEvent) => {
+            setTimeout(() => html.addEventListener(userEvent, handleOutSideClick));
+        })
+        element.setAttribute(outside, "")
+    }
     
     function handleOutSideClick(event) {
         if(!element.contains(event.target)){
+            element.removeAttribute(outside);
             html.removeEventListener("click", handleOutSideClick)
             callback();
         }
