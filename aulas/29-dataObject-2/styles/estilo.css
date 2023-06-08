@@ -514,3 +514,18 @@ ul {
     font-size: 1.8rem;
     color: #E54;
 }
+
+[data-semana]::after{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    content: " ";
+    border-radius: 50%;
+    border: 2px solid;
+    margin-left: 5px;
+}
+
+[data-semana].aberto::after{
+    background-color: rgb(47, 255, 71);
+}
