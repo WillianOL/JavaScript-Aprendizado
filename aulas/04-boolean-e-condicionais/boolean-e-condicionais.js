@@ -59,7 +59,7 @@ var igual1 = 50 == 50; // true
 var igual2 = 50 == "50" // true
 var igual3 = 50 === 50; // true
 var igual4 = 50 === "50" // false
-var igual5 = 'Willian' === 'willian'
+var igual5 = 'Willian' === 'willian' // false
 console.log(igual5);
 
 //Direfente
