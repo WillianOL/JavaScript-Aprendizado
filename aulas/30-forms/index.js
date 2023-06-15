@@ -28,11 +28,16 @@ function pegarValue(event) {
     } else{
         target.classList.remove("invalido")
     }
+    document.body.style.backgroundColor = event.target.value
     texto.innerHTML = event.target.value
+
 }
 
+const dados = {};
+function armazenarEmObjeto(event) {
+    dados[event.target.name] = event.target.value
+    console.log(dados);
+}
+
+formulario2.addEventListener("change", armazenarEmObjeto)
 formulario2.addEventListener("change", pegarValue)
-
-function mudarCor() {
-    
-}
