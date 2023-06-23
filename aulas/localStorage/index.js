@@ -49,7 +49,12 @@ function armazenarNoLocalStorage(nome, valor) {
 
 function setValues() {
     const properts = Object.keys(localStorage);
-    console.log(properts);
+    properts.forEach((propertie) => {
+        handleStyle[propertie](localStorage[propertie])
+        controles.elements[propertie].value = localStorage[propertie]
+    })
+
+    showCssStyle();
 }
 setValues();
 
