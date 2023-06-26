@@ -26,7 +26,7 @@ const handleStyle = {
         this.element.style.fontFamily = value;
     },
     fontSize(value) {
-        this.element.style.fontSize = value + "px";
+        this.element.style.fontSize = value + "rem";
     },
     texto(value) {
         this.element.innerText = value;
@@ -39,12 +39,12 @@ function pegarEstilos(event) {
 
     handleStyle[nomeEvento](valor);
     showCssStyle();
-    armazenarNoLocalStorage(nomeEvento, valor);
+    saveValues(nomeEvento, valor);
 }
 
 // Vai armazernar os valores no localStorege, com o nome e o valor.
-function armazenarNoLocalStorage(nome, valor) {
-    localStorage[nome] = valor;
+function saveValues(nome, valor){
+    localStorage[nome] = valor
 }
 
 function setValues() {
@@ -52,6 +52,7 @@ function setValues() {
     properts.forEach((propertie) => {
         handleStyle[propertie](localStorage[propertie])
         controles.elements[propertie].value = localStorage[propertie]
+        console.log(localStorage[propertie]);
     })
 
     showCssStyle();
