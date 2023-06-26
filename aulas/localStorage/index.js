@@ -52,7 +52,6 @@ function setValues() {
     properts.forEach((propertie) => {
         handleStyle[propertie](localStorage[propertie])
         controles.elements[propertie].value = localStorage[propertie]
-        console.log(localStorage[propertie]);
     })
 
     showCssStyle();
