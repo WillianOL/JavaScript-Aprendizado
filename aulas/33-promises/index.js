@@ -41,6 +41,7 @@ const dados = new Promise((resolve) => {
     }, 1500)
 })
 
+// Com o OBJETO Primise e o método .all podemos pegar o resultado das promises e armazenar dentro de uma array
 const carregouTudo = Promise.all([login, dados])
 
 carregouTudo.then((resolucao) => {
