@@ -12,11 +12,16 @@ const promesa = new Promise((resolve, reject) =>{
 })
 
 // O parâmetro do then é o valor que está dentro do resolve.(argumanto)
-let objetoFinal;
-promesa.then((resolucao) => {
+const retorno = promesa
+.then((resolucao) => {
+    resolucao.profissao = "Desenvolvedor front-end"
     return resolucao
-}).then((resultado2) => {
-    return resultado2.pais = "Grecia"
-}).then((final) => {;
+})
+.then((resultado2) => {
+    resultado2.pais = "Brasil"
+    return resultado2
+})
+.catch((casoRejeitada) => {
+    console.log(casoRejeitada);
 })
 // {nome: "Willian", idade: 18}
