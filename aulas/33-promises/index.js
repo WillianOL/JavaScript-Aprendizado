@@ -30,12 +30,19 @@ const retorno = promesa
     })
 
 const login = new Promise((resolve) => {
-    resolve("Usuário fez o login")
+    setTimeout(() => {
+        resolve("Usuário fez o login")
+    }, 1000)
 })
 
 const dados = new Promise((resolve) => {
-    resolve("Dados carregados")
+    setTimeout(() => {
+        resolve("Dados carregados")
+    }, 1500)
 })
 
 const carregouTudo = Promise.all([login, dados])
-console.log(carregouTudo);
+
+carregouTudo.then((resolucao) => {
+    console.log(resolucao);
+})
