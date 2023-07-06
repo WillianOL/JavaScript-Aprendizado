@@ -1,11 +1,12 @@
 const promesa = new Promise((resolve, reject) => {
-    const condicao = false;
+    const condicao = true;
 
     // A maioria das promises vem acompanhadas de condições
     if (condicao) {
-        setTimeout(() => {
+        // As promesas fazem realmente sentido se o código dentro dela for assíncrono.
+        setTimeout(() => { // ESPERA 5 segundos para executar o resolve
             resolve({ nome: "Willian", idade: 18 });
-        }, 1000);
+        }, 5000);
     } else {
         reject(Error("Não funcionou"));
     }
@@ -13,16 +14,16 @@ const promesa = new Promise((resolve, reject) => {
 
 // O parâmetro do then é o valor que está dentro do resolve.(argumanto)
 const retorno = promesa
-    .then((resolucao) => {
+    .then((resolucao) => { // O then retorna uma nova promise
         resolucao.profissao = "Desenvolvedor front-end";
         return resolucao;
     })
-    .then((resultado2) => {
+    .then((resultado2) => { // O valor vai ser o que retornou do then anterior.
         resultado2.pais = "Brasil";
         return resultado2;
-    },
-    casoRejeitada => {
-        // catch vai ser executada caso a promise seja rejeitada
+    })
+    // catch vai ser executado caso a promise seja rejeitada
+    .catch((casoRejeitada) => { // Ele também pode ser passado como segundo argumento do .then
         console.log(casoRejeitada);
     })
     .finally(() => { // finally vai ser executado sempre, independente do resoltado da promise
