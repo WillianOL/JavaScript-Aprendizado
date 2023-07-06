@@ -6,7 +6,7 @@ const promesa = new Promise((resolve, reject) => {
         // As promesas fazem realmente sentido se o código dentro dela for assíncrono.
         setTimeout(() => { // ESPERA 5 segundos para executar o resolve
             resolve({ nome: "Willian", idade: 18 });
-        }, 5000);
+        }, 2000);
     } else {
         reject(Error("Não funcionou"));
     }
@@ -44,7 +44,13 @@ const dados = new Promise((resolve) => {
 
 // Com o OBJETO Primise e o método .all podemos pegar o resultado das promises e armazenar dentro de uma array
 const carregouTudo = Promise.all([login, dados])
-
 carregouTudo.then((resolucao) => {
     console.log(resolucao);
+})
+
+// Com o método .race retornamos o valor da primeira promise resolvvida. Tipo uma corrida de promises
+
+const primeiraPromise = Promise.race([login, dados])
+primeiraPromise.then((resoltado) => {
+    console.log(resoltado);
 })
