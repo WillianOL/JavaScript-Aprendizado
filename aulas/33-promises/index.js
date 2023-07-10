@@ -12,7 +12,7 @@ const promesa = new Promise((resolve, reject) => {
     }
 });
 
-// O parâmetro do then é o valor que está dentro do resolve.(argumanto)
+// O parâmetro do then é o valor que está dentro do resolve.(argumento) - { nome: "Willian", idade: 18 }
 const retorno = promesa
     .then((resolucao) => { // O then retorna uma nova promise
         resolucao.profissao = "Desenvolvedor front-end";
@@ -42,14 +42,13 @@ const dados = new Promise((resolve) => {
     }, 1500)
 })
 
-// Com o OBJETO Primise e o método .all podemos pegar o resultado das promises e armazenar dentro de uma array
+// Com o OBJETO Promise e o método .all podemos pegar o resultado das promises e armazenar dentro de uma array
 const carregouTudo = Promise.all([login, dados])
 carregouTudo.then((resolucao) => {
     console.log(resolucao);
 })
 
-// Com o método .race retornamos o valor da primeira promise resolvvida. Tipo uma corrida de promises
-
+// Com o método .race retornamos o valor da primeira promise resolvida. Tipo uma corrida de promises
 const primeiraPromise = Promise.race([login, dados])
 primeiraPromise.then((resoltado) => {
     console.log(resoltado);
