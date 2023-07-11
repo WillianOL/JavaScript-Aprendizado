@@ -27,3 +27,8 @@ clone.then((r) => {
     r.text().then((texto) => console.log(texto));
     r2.json().then((objeto) => console.log(objeto));
 });
+
+const headers = fetch("https://viacep.com.br/ws/57690000/json/");
+headers.then(response => {
+    response.headers.forEach(header => console.log(header))
+})
