@@ -32,3 +32,18 @@ const headers = fetch("https://viacep.com.br/ws/57690000/json/");
 headers.then(response => {
     response.headers.forEach(header => console.log(header))
 })
+
+// O status diz se a página está funcionando ou não, ou se ela foi encontrada. Retornando 200 ou 404
+const stats = fetch("https://viacep.com.br/ws/57690000/json/");
+stats.then(response => {
+    if(response.status === 404){
+        console.log("Página inativa");
+    }
+})
+
+
+const typeEurl = fetch("https://viacep.com.br/ws/57690000/json/");
+typeEurl.then(response => {
+    console.log(response.type);
+    console.log(response.url);
+})
