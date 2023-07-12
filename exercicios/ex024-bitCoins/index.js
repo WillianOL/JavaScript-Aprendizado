@@ -2,9 +2,14 @@
 // retorne no DOM o valor de compra da bitcoin and reais.
 // atualize este valor a cada 30s
 
-const bitCoin = fetch("https://blockchain.info/ticker")
+function pegarBitCoins() {
+    const bitCoin = fetch("https://blockchain.info/ticker")
+    bitCoin.then(response => response.json())
+        .then(bitCoins => {
+            document.body.innerHTML = (`Valor: R$ ${bitCoins.BRL.buy}`).replace(".", ",")
+    })
+}
 
-bitCoin.then(response => response.json())
-.then(bitCoins => {
-    console.log(bitCoins.BRL);
-})
+setInterval(() => {
+    pegarBitCoins();
+}, 1000 * 30)
