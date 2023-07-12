@@ -9,3 +9,28 @@ arquivoJson.then(r => r.text())
         console.log(json);
     })
 })
+
+
+const dados = {
+    usuario: "Rodolfo33",
+    senha: 2902830,
+    publicacoes: 13,
+    seguidores: 1493,
+}
+
+// Transforma um objeto javascript em uma string em formato de json
+const stringConfig = JSON.stringify(dados)
+console.log(stringConfig);
+
+// Exemplo real com localstorage
+const dados2 = {
+    usuario: "Reinaldo33",
+    senha: 2902830,
+    publicacoes: 13,
+    seguidores: 1493,
+}
+
+localStorage.dados = JSON.stringify(dados2);
+const pegaDados = JSON.parse(localStorage.dados)
+
+console.log(pegaDados);
