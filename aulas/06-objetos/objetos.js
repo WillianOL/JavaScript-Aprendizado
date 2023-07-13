@@ -12,7 +12,7 @@ console.log(pessoa.nome, pessoa.idade);
 var metodo = {
     custo: 2,
     precoCoca: function(cocas){
-        return `As cocas custam ${metodo.custo * cocas}R$ reais ao todo`
+        return `As cocas custam ${this.custo * cocas}R$ reais ao todo`
     },
     custoSapatos: 15,
     precoSapatos: function(sapatos){
@@ -48,3 +48,14 @@ menu.color = '#f00'; // Criando novas propriedades
 menu.mensagem = function() {
     console.log('Adicionando um metodo a um objeto');
 } // Com isso também pode-se criar novos métodos/funções
+
+// usar this
+const casa = {
+    quartos: 2,
+    pessoas: 6,
+    quartosDivididos() {
+        return `Em cada quarto vão ficar ${this.pessoas / this.quartos}`
+    }
+}
+
+console.log(casa.quartosDivididos());
