@@ -5,7 +5,8 @@ api.then((r) => r.json()).then((pokemon) => {
 
 const apiUrl = "https://jsonplaceholder.typicode.com/posts/";
 const apiObject = {
-    method: "POST",
+    // Por padrão, utilizamos o método GET para trabalharmos com a web, pois estamos pegando dados, não criando eles.
+    method: "POST", // O POST serve para enviarmos dados
     body: '{"aula": "JavaScript-API"}',
     headers: {
         "Content-Type": "application/json; charset=utf-8",
