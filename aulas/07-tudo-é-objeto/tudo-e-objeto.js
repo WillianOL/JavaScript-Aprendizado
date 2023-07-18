@@ -1,7 +1,6 @@
 // Tudo é objeto
 var nome = 'Willian';
-console.log(nome.toLowerCase())
-// Transformando a vareáel (objeto) em letras minúsculas.
+nome.toLowerCase() // herda do objeto o método do objeto String.
 
 // Para números também
 var n1 = 1.6

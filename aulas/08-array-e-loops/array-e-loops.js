@@ -37,6 +37,6 @@ for (var i = 0; i <= comida.length; i++) {
 //Método que executa uma função para cada item do array.
 var mes = ['Janeiro', 'Fevereiro', 'março', 'abril']
 
-mes.forEach( function(item, index, array) {
+mes.forEach(function(item, index, array) {
     console.log(item, index, array)
 });
