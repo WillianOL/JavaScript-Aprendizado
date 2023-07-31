@@ -79,7 +79,7 @@ console.log(listaCarros.reverse()); // Inverte a ordem da array
 
 const listaCores01 = ["Azul", "vermelho", "verde"];
 console.log(listaCores01);
-console.log(listaCores01.splice(1, 1, "Preto")); // Adiciona itens apartir do index passado, remove um número de itens passado dps do index(retorna ele).
+console.log(listaCores01.splice(1, 1, "Preto")); // Adiciona itens apartir do index passado, remove um número de itens passado dps do index(retorna eles).
 console.log(listaCores01);
 
 listaFrutas = ["item01", "item02", "item03"].fill("Jabuticaba", 1); // Preenche com o valor, começando do index passado.
