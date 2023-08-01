@@ -9,7 +9,7 @@ console.log(arrayCarros); // A array não muda após a alteração
 
 const li = document.querySelectorAll("li");
 
-//Quando for só um parâmetro e uma linha de cógico, não precisa dos parênteses nem das chaves
+//Quando for só um parâmetro e uma linha de código, não precisa dos parênteses nem das chaves
 li.forEach((i) => i.classList.add("TESTE"));
 
 const cores = ["Azul", "Preto", "Vermelho"];
@@ -22,7 +22,7 @@ console.log(coresModificadas);
 const numeros = [10, 7, 33, 100];
 let result = 0;
 const numerosSomados = numeros.map((n) => {
-    result = result + n;
+    result = result + n0;
     return result;
 });
 
