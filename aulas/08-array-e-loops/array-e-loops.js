@@ -18,6 +18,13 @@ while (n <= 10) {
     n++
 }
 
+// do while
+let contador = 0
+do{
+    console.log(`Contador é: ${contador}`);
+    contador++
+} while(contador <= 10)
+
 //Array e loops
 var nomes = ['Willian', 'Netinho', 'André', 'Pedro']
 for (var c = 0; c <= nomes.length; c++) {
@@ -36,7 +43,6 @@ for (var i = 0; i <= comida.length; i++) {
 //forEach
 //Método que executa uma função para cada item do array.
 var mes = ['Janeiro', 'Fevereiro', 'março', 'abril']
-
 mes.forEach(function(item, index, array) {
     console.log(item, index, array)
 });
