@@ -54,11 +54,11 @@ class Card {
         const cardCriado = document.createElement("div");
         cardCriado.style.padding = this.card.padding + "px";
         cardCriado.style.color = this.card.color;
-        cardCriado.style.borderRadius = this.card.borderRadius + "px"
-        cardCriado.style.backgroundColor = this.card.background
+        cardCriado.style.borderRadius = this.card.borderRadius + "px";
+        cardCriado.style.backgroundColor = this.card.background;
         cardCriado.innerText = this.card.texto;
 
-        document.body.appendChild(cardCriado)
+        document.body.appendChild(cardCriado);
         return cardCriado;
     }
 }
@@ -74,3 +74,34 @@ const cardVermelho = {
 const colocarBotao = new Card(cardVermelho);
 
 console.log(colocarBotao.criarCard());
+
+
+class Button2 {
+    constructor(cor, background, font, content, padding) {
+        this.cor = cor;
+        this.background = background;
+        this.font = font;
+        this.content = content
+        this.padding = padding
+    }
+
+    criarBotao() {
+        const botao = document.createElement("button")
+        botao.style.color = this.cor
+        botao.style.backgroundColor = this.background
+        botao.style.fontFamily = this.font
+        botao.style.padding = this.padding + "px"
+        botao.innerHTML = this.content
+        return botao
+    }
+    // Acessar funções que retornam valores, e usar elas (this)
+    colocarEm(target) {
+        const elementTarget = document.querySelector(target)
+        elementTarget.appendChild(this.criarBotao());
+        return elementTarget
+    }
+}
+
+const botaoCinza = new Button2("white", "#333", "monospace", "Clique aqui", 20)
+
+botaoCinza.colocarEm("body")

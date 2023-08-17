@@ -14,7 +14,7 @@ console.log(juntarLetras.name); // retorna o nome da função
 
 
 // Toda função tem como referencial o objeto Constructor Function, fazendo o this dela herdar os métodos e propriedades do construtor.
-// Com o .call() podemos mudar esse referencial, para um objeto por exemplo: 
+// Com o .call() podemos mudar esse referencial, para um objeto por exemplo:
 const pessoa = {
     nome: "Willian",
     idade: 18,
@@ -89,7 +89,6 @@ const exemploApply = Array.prototype.filter.apply(lista02, [possuiAtivado]); // 
 const exemploCall = Array.prototype.filter.call(lista02, possuiAtivado); // argumento separado
 
 // Diferente do call e do apply, o bind vai retornar uma função, mas não vai executar ela.
-
 const exemploBind = Array.prototype.filter.bind(lista02, (item) => {
     return item
 });

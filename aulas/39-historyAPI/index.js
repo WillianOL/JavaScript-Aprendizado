@@ -26,7 +26,7 @@ function trocarPagina(novoTexto) {
 }
 
 window.addEventListener("popstate", () => {
-    fetchPage(window.location.href)
+    fetchPage(window.location.href);
 })
 
 links.forEach((link) => {
