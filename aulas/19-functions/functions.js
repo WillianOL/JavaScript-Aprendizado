@@ -80,7 +80,6 @@ Math.min.apply(null, listaNumeros) // --> array
 Math.min.call(null, 10, 120, 5, -10, 22, 0) // --> argumentos separados.
 
 const lista02 = document.querySelectorAll('li');
-
 function possuiAtivado(itemLista) {
     return itemLista.classList.contains('ativado')
 }

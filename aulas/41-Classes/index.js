@@ -31,7 +31,7 @@ class Botao2 {
         elementoBotao.style.backgroundColor = this.background;
         return elementoBotao;
     }
-
+    // Acessar funções que retornam valores, e usar elas (this)
     colocarEm(local) {
         const localDoElemento = document.querySelector(local);
         localDoElemento.appendChild(this.criarBotao());
@@ -42,8 +42,7 @@ class Botao2 {
 const novoBotao = new Botao2("Ver mais", "#70F");
 
 console.log(novoBotao, novoBotao.criarBotao());
-
-console.log(novoBotao.colocarEm("body"));
+novoBotao.colocarEm("body")
 
 class Card {
     constructor(card) {
@@ -57,14 +56,18 @@ class Card {
         cardCriado.style.borderRadius = this.card.borderRadius + "px";
         cardCriado.style.backgroundColor = this.card.background;
         cardCriado.innerText = this.card.texto;
-
         document.body.appendChild(cardCriado);
         return cardCriado;
     }
-}
 
+    colocarEm(target) {
+        const localTarget = document.querySelector(target)
+        localTarget.appendChild(this.criarCard())
+    }
+}
+// Pode-se passar um objeto com as modificações por exemplo:
 const cardVermelho = {
-    background: "#F0F",
+    background: "#F70",
     color: "white",
     texto: "Vou ser um programador no futuro",
     borderRadius: 5,
@@ -73,35 +76,35 @@ const cardVermelho = {
 
 const colocarBotao = new Card(cardVermelho);
 
-console.log(colocarBotao.criarCard());
+colocarBotao.colocarEm("body")
 
-
-class Button2 {
-    constructor(cor, background, font, content, padding) {
-        this.cor = cor;
+class Button3 {
+    constructor(texto, background, width) {
+        this.texto = texto;
         this.background = background;
-        this.font = font;
-        this.content = content
-        this.padding = padding
+        this.width = width;
     }
 
     criarBotao() {
-        const botao = document.createElement("button")
-        botao.style.color = this.cor
-        botao.style.backgroundColor = this.background
-        botao.style.fontFamily = this.font
-        botao.style.padding = this.padding + "px"
-        botao.innerHTML = this.content
-        return botao
+        const elementoBotao = document.createElement("button");
+        elementoBotao.classList.add("newBotton");
+        elementoBotao.innerHTML = this.texto;
+        elementoBotao.style.backgroundColor = this.background;
+        elementoBotao.style.width = this.width + "px"
+        return elementoBotao;
     }
     // Acessar funções que retornam valores, e usar elas (this)
-    colocarEm(target) {
-        const elementTarget = document.querySelector(target)
-        elementTarget.appendChild(this.criarBotao());
-        return elementTarget
+    colocarEm(local) {
+        const localDoElemento = document.querySelector(local);
+        localDoElemento.appendChild(this.criarBotao());
+        return localDoElemento;
+    }
+
+    static widthPadrao(texto) {
+        return new Button3(texto, "blue", "200")
     }
 }
 
-const botaoCinza = new Button2("white", "#333", "monospace", "Clique aqui", 20)
+const botaoPadrao = Button3.widthPadrao("Clique aqui")
 
-botaoCinza.colocarEm("body")
+botaoPadrao.colocarEm("body")
