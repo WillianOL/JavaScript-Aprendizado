@@ -12,7 +12,7 @@ const pessoa2 = new Object({
 console.log(pessoa.nome);
 console.log(pessoa2.idade);
 
-// Com o .create() pode-se criar um objeto apartir de outro já criado herdando seus métodos e propriedades
+// Com o .create() pode-se criar um objeto a partir de outro já criado herdando seus métodos e propriedades
 const objeto = {
     nome: "Claudio",
     pegarPalavra(value) {
@@ -40,11 +40,11 @@ const mesa = {
 };
 
 const funcionario1 = {
-    nome: "Claudio",
+    nome: "Jorge",
 };
 
 const funcionario2 = {
-    nome: "Alberto",
+    nome: "Julia",
 };
 
 Object.assign(funcionario1, mesa);
@@ -52,14 +52,15 @@ Object.assign(funcionario2, mesa);
 
 console.log(funcionario1, funcionario2);
 
-// defineProperties - Define novas propriedades ao objeto, a diferença é que podemos modificar as caracteristicas dessas propriedades
+// defineProperties - Define novas propriedades ao objeto, a diferença é que podemos modificar as características dessas propriedades
 const carro = {};
 
 Object.defineProperties(carro, {
     marca: {
         value: "Honda", // define um valor
         writable: false, // define se pode escrever por sima do valor original
-        configurable: false, // define se é possivel modificar/configurar o valor
+        configurable: false, // define se é possivel modificar/configurar o valorx
+        
     },
 }); // Por padrão todas esses configurações estão como false
 
