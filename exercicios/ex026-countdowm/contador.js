@@ -11,18 +11,29 @@ export default class Contador {
     get _DiferencaTempoAteNatal() {
         return this._dataFutura.getTime() - this._dataAtual.getTime()
     }
-    get _dias() {
+    get dias() {
         return Math.floor(this._DiferencaTempoAteNatal / (24 * 60 * 60 * 1000))
     }
-    get _horas() {
+    get horas() {
         return Math.floor(this._DiferencaTempoAteNatal / (60 * 60 * 1000))
     }
-    get _minutos() {
+    get minutos() {
         return Math.floor(this._DiferencaTempoAteNatal / (60 * 1000))
     }
-    get _segundos() {
+    get segundos() {
         return Math.floor(this._DiferencaTempoAteNatal / 1000)
+    }
+    get total() {
+        const dias = this.dias;
+        const horas = this.horas % 24;
+        const minutos = this.minutos % 60;
+        const segundos = this.segundos % 60;
+        return {
+            dias,
+            horas,
+            minutos,
+            segundos
+        }
     }
 }
 
-console.log("Teste");
