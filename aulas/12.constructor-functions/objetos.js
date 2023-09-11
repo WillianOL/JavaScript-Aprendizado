@@ -43,9 +43,9 @@ function PrecoProduto(marcaAt, precoInicial) {
 const calca = new PrecoProduto('Gucci', 200);
 console.log(calca)
 
-//Exemplo de web real
+//Exemplo de web real   
 function Dom(element){ // Função construtora
-    this.seletor = function (){ // retornar o elemento passado no objeto. 
+    this.seletor = function (){ // Retornar o elemento passado no objeto. 
         return document.querySelector(element);
     }
     this.ativar = function (classe){ // Adiciona a classe ativar ao elemento passado no objeto

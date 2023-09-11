@@ -143,5 +143,4 @@ console.log(palavra2.toString()); // Hello, world!
 console.log(somar.toString()); // retorna a função escrita
 
 // Verifica que tipo de objeto é, trocando o referencial de this com o call
-
 console.log(Object.prototype.toString.call(palavra2));
