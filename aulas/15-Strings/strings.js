@@ -8,9 +8,9 @@ console.log(length);
 
 const frase = 'Meu nome é ';
 const carac = frase.charAt(2); // Mostra o caracter de acordo com seu indicie
+console.log(carac);
 
 const concatena = frase.concat(nome, "."); // Concatena as strings
-
 
 const gameList = 'PS2, GameBoy, Xbox, PS1'
 const game = 'Xbox'
@@ -26,11 +26,11 @@ const palavra01 = 'Eu andei de bike'
 const palavra02 = 'Comprei ovos'
 const palavra03 = 'Olá, Dev!'
 
-console.log(palavra02.slice(0, 5)); // mostra os caracteres do index 0 ao 5. 
-console.log(palavra03.slice(2)); // Mostra apartir do index 2.
-console.log(palavra01.slice(-4)) // mostra os 4 ultimos caracteres.
+console.log(palavra02.slice(0, 5)); // recorta os caracteres do index 0 ao 5. 
+console.log(palavra03.slice(2)); // recorta a partir do index 2.
+console.log(palavra01.slice(-4)) // recorta os 4 ultimos caracteres.
 console.log(palavra02.slice(0, -9)) // tira os ultimos 9 caracteres.
-console.log(palavra01.slice(2, 4)) // mostra os caracteres do 2 até 4.
+console.log(palavra01.slice(2, 4)) // recorta os caracteres do 2 até 4.
 
 
 const frase02 = 'Fui caminhar pela manhã'

@@ -22,7 +22,7 @@ console.log(coresModificadas);
 const numeros = [10, 7, 33, 100];
 let result = 0;
 const numerosSomados = numeros.map((n) => {
-    result = result + n0;
+    result = result + n;
     return result;
 });
 
