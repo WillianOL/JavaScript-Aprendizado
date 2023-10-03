@@ -34,42 +34,45 @@ const videos1 = cliente.compras.digitais.livros;
 // const { livros, videos } = cliente.compras.digitais;
 
 // Forma de pegar propriedades dentro de uma propriedade
-const {digitais, fisicas, digitais:{livros, videos} } = cliente.compras
+const {
+    digitais,
+    fisicas,
+    digitais: { livros, videos },
+} = cliente.compras;
 console.log(livros, videos);
-
 
 const cliente2 = {
     sobrenome: "Oliveira",
     compras: 10,
-}
+};
 
-const {sobrenome, compras} = cliente;
+const { sobrenome, compras } = cliente;
 // Forma de renomear o nome da variável
-const {sobrenome: sobrenomeOliveira} = cliente2
+const { sobrenome: sobrenomeOliveira } = cliente2;
 
 const usuario = {
     user: "Willian",
     id: 29038203,
     nivel: 23,
-}
+};
 // Caso alguma propriedade não exista, pode-se definir um valor padrão para o caso
-const {user, id, nivel = 0} = usuario
+const { user, id, nivel = 0 } = usuario;
 console.log(nivel);
 
-// Para funções, é a mesma coisa. Porém é com "[]" e o nome das variáveis é personalizado
+// Para arrays, é a mesma coisa. Porém é com "[]" e o nome das variáveis é personalizado
 const frutas = ["Limão", "Maçã", "Banana"];
 
-const primeiraFruta = frutas[0]
-const segundaFruta = frutas[1]
-const terceiraFruta = frutas[2]
+const primeiraFruta = frutas[0];
+const segundaFruta = frutas[1];
+const terceiraFruta = frutas[2];
 // com o destructuring
-const [primeira, segunda, terceira] = frutas
+const [primeira, segunda, terceira] = frutas;
 console.log(primeira, segunda, terceira);
 
 // Desestruturação de argumentos
 // Pegando diretamente as proprieades do objeto KeyboardEvent
-function teclaAleatoria({key, keyCode}){
+function teclaAleatoria({ key, keyCode }) {
     console.log(key, keyCode);
 }
 
-document.addEventListener("keydown", teclaAleatoria)
+document.addEventListener("keydown", teclaAleatoria);

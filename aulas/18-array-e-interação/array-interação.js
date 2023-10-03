@@ -14,15 +14,16 @@ li.forEach((i) => i.classList.add("TESTE"));
 
 const cores = ["Azul", "Preto", "Vermelho"];
 const coresModificadas = cores.map((item, index) => {
-    return item.toUpperCase();
+    return "Barco " + item
 });
+console.log(cores);
 console.log(coresModificadas);
 
 // Usar o map quando for trabalhar com listas/arrays que vai retornar uma nova array com valores novos
 const numeros = [10, 7, 33, 100];
 let result = 0;
 const numerosSomados = numeros.map((n) => {
-    result = result + n;
+    result += n;
     return result;
 });
 
@@ -62,7 +63,7 @@ const nomesAula = (aulas) => aulas.nome; // Somente uma linha de código usando 
 const arrayNomeAulas = aulas.map(nomesAula); // retorna a array
 console.log(arrayNomeAulas);
 
-const listaNumeros = [20, 5, 10, 30];
+const listaNumeros = [20, 5, 10, 1, 23];
 
 // No reduce temos um novo argumento que é o acumulador, onde ele é o valor da interação anterior.
 const acumular = listaNumeros.reduce((a, item) => {
@@ -75,10 +76,11 @@ console.log(`Valor total foi de ${acumular}`);
 
 // Usando o reduce para retornar o maior valor da array
 const listaNumeros2 = [10, 33, 4, 55, 22, 44, 0];
-const menorNumero = listaNumeros2.reduce((anterior, atual) => {
+const maiorNumero = listaNumeros2.reduce((anterior, atual) => {
+    console.log(anterior);
     return anterior > atual ? anterior : atual;
 });
-console.log(menorNumero);
+console.log(maiorNumero);
 
 const trabalhos = [
     {
@@ -100,15 +102,15 @@ const trabalhos = [
 ];
 
 // Vai retornar um objeto com apenas os nomes dos trabalhos
-const listaNomeTrabalhos = trabalhos.reduce((acumulador, trab, index) => {
-    acumulador[index] = trab.nome; // o acumulador inicial vai receber o index do primeiro item, depois vai receber o nome do primeiro trabalho.
+const listaNomeTrabalhos = trabalhos.reduce((acumulador, {nome}, index) => {
+    acumulador[index] = nome; // o acumulador inicial vai receber o index do primeiro item, depois vai receber o nome do primeiro trabalho.
     return acumulador;
 }, {});
 
 console.log(listaNomeTrabalhos);
 
 const listaFrutas = ["Maçã", "Uva", "Limão", "Melão"];
-// Mesma coisa do reduce normal, só que a interação acontece da esquerda pra direita
+// Mesma coisa do reduce normal, só que a interação acontece da direita pra esquerda
 const interacao = listaFrutas.reduceRight((acl, item) => acl + " " + item);
 console.log(interacao); // Melão Limão Uva Maçã.
 
@@ -126,8 +128,8 @@ const todosVerdade = listaCarros.every((carro) => {
 console.log(todosVerdade); // false - por causa da string vazia
 
 const numbers = [12, 10, 7, 22, 20, 39];
-const mairQue5 = numbers.every((n) => n > 5);
-console.log(mairQue5); // true -  todos os números são maiores que 5
+const maiorQue5 = numbers.every((n) => n > 5);
+console.log(maiorQue5); // true -  todos os números são maiores que 5
 
 // Retorna o index do primeiro valor correspondente ao return
 const listaTrabalhos = ["Programador", "Designer", "SEO"];

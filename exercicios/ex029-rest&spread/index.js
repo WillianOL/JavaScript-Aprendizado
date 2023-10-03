@@ -25,4 +25,4 @@ const frutas = ['Banana', 'Uva', 'Morango'];
 const comidas = ['Pizza', 'Batata'];
 
 comidas.push(...frutas)
-console.log(comidas);  
+console.log(comidas);
