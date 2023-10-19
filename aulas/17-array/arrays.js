@@ -104,7 +104,7 @@ console.log(join);
 // Macete para trocar algo com o join
 let titulo = "<h2>Titulo principal</h2>";
 titulo = titulo.split("h2"); // remove o h2 e retorna uma array
-titulo = titulo.join("h1"); // depois da virgula adicionar o h2
+titulo = titulo.join("h1"); // depois da virgula adicionar o h1
 
 console.log(titulo);
 

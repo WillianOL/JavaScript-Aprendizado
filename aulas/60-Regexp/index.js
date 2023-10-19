@@ -80,3 +80,148 @@ console.log(padraoRegex15)
 const regex7 = /\s/g
 const padraoRegex16 = "     Amanhã é um dia especial".replace(regex7, "0")
 console.log(padraoRegex16)
+
+// Quantificador
+// Forma se selecionar uma quantidade especifica de caractéres
+const regex8 = /i{2,}/g // Vai selecionar os i's apartir de 2 caracteres seguidos
+const padraoRegex17 = "Vaiiiiii, corinthians!!!".replace(regex8, "i")
+console.log(padraoRegex17)
+
+// Com isso, podemos por exemplo selecionar palavra por palavra em vez de caracter por caracter com o \w
+const regex9 = /\w{2,}/g // Vai selecionar a sequencia de caracter a partir de 2
+const padraoRegex18 = p.replace(regex9, "X")
+console.log(padraoRegex18)
+
+// Utilizando o "+", da na mesma
+const regex10 = /\w+/g
+const padraoRegex19 = p.replace(regex10, "%")
+console.log(padraoRegex19)
+
+// Utilizando o "*" também funciona, mas ele seleciona quando existir 0 ou mais ocorrências
+const regex11 = /-\d*/g // Vai selecionar todo digito que começar com "-"
+const padraoRegex20 = p.replace(regex11, "-XXX")
+console.log(padraoRegex20)
+
+// "?" é o opcional, pode ter ou não algo
+const regex12 = /Vamos?/gi // Pode ou não ter o "s"
+const padraoRegex21 = "Vamos a praia. vamo nadar!".replace(regex12, "Vamos")
+console.log(padraoRegex21)
+
+// "|" seleciona ou um ou outro. Como se fosse o ||("ou" lógico)
+const regex13 = /Está|ainda|bastante/gi
+const padraoRegex22 = "Está manhã estudei Regex, e ainda treinei bastante!!".replace(regex13, "**")
+console.log(padraoRegex22)
+
+// \b seleciona palavras que estejam entre espaços em branco
+const regex14 = /\bBrinca\b/gi
+const padraoRegex23 = "Fui brinca, mas eles já estavam brincando".replace(regex14, "XX")
+console.log(padraoRegex23);
+
+// " ^ " é possível informar que a busca deve ser iniciada no início da linha.
+const regex15 = /^\w+/gm // Flag m aplica para cada linha
+const padraoRegex24 = 
+`emailcontato@gmail.com
+emailprincipal@gmail.com`.replace(regex15, "X")
+console.log(padraoRegex24)
+
+// " $ " é possível informar que a busca deve ser iniciada no final da linha.
+const regex16 = /\w+$/gm // Flag m aplica para cada linha
+const padraoRegex25 = 
+`emailcontato@gmail.com
+emailprincipal@gmail.com`.replace(regex16, "X")
+console.log(padraoRegex25)
+
+// \n seleciona as quebras de linhas de cara linha
+
+// Seleção unicode - cada caracter tem seu código. Para selecionar pelo código basta colocar \u e o código
+const regex17 = /\u0040+/g // @
+const padraoRegex26 = "emailcontato@gmail.com".replace(regex17, "--")
+console.log(padraoRegex26)
+
+
+// Padrões Regex
+// CEP
+// /\d{5}[-\s]?\d{3}/g - Uma sequência de 5 digitos, depois pode ter o "-" ou espaço(são opcionais), depois uma sequência de 3 digitos
+const cepValidation = /\d{5}[-\s]?\d{3}/g
+const ceps = [
+    '57690000',
+    '57690-000',
+    '57690 000'
+]
+const arrayCeps = [];
+
+for(cep1 of ceps) {
+    console.log(cep1, cep1.match(cepValidation))
+}
+
+// CPF
+const cpfValidation = /(\d{3}[.-]?){3}\d{2}/g
+const cpfs = [
+    '000.000.000-00',
+    '000-000-000-00',
+    '000.000.000.00',
+    '000000000-00',
+    '00000000000'
+]
+
+for(cpf1 of cpfs) {
+    console.log(cpf1, cpf1.match(cpfValidation))
+}
+
+// CNPJ
+const cnpjValidation = /\d{2}[.-]?(?:\d{3}[.-]?){2}\/?\d{4}[.-]?\d{2}/g;
+const cnpjs = [
+    '00.000.000/0000-00',
+    '00000000000000',
+    '00-000-000-0000-00',
+    '00.000.000/000000',
+    '00.000.000.000000',
+    '00.000.000.0000.00',
+  ];
+
+for(c of cnpjs) {
+    console.log(c, c.match(cnpjValidation))
+}
+
+// Celular
+const celularValidation = /(?:\+?55\s?)?(?:\(?\d{2}\)?[\s-]?)?\d{4,5}[\s-]?\d{4}/g
+const celulares = [
+    '+55 11 98888-8888',
+    '+55 11 98888 8888',
+    '+55 11 988888888',
+    '+55 11988888888',
+    '+5511988888888',
+    '5511988888888',
+    '11 98888-8888',
+    '11 98888 8888',
+    '(11) 98888 8888',
+    '(11) 98888-8888',
+    '11-98888-8888',
+    '11 98888 8888',
+    '11988888888',
+    '11988888888',
+    '988888888',
+    '(11)988888888',
+    '98888 8888',
+    '8888 8888'
+]
+
+for(cel of celulares) {
+    console.log(cel, cel.match(celularValidation))
+}
+
+// Email
+const emailValidation = /[\w.-]+@[\w-]+\.[\w-.]+/gi;
+const emails = [
+    'email@email.com',
+    'email@email.com.org',
+    'email-email@email.com',
+    'email_email@email.com',
+    'email.email23@email.com.br',
+    'email.email23@empresa-sua.com.br',
+    'c@contato.cc',
+]
+
+for(emai of emails) {
+    console.log(emai, emai.match(emailValidation))
+}
