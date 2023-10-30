@@ -1,10 +1,9 @@
 const promesa = new Promise((resolve, reject) => {
     const condicao = true;
-
     // A maioria das promises vem acompanhadas de condições
     if (condicao) {
         // As promesas fazem realmente sentido se o código dentro dela for assíncrono.
-        setTimeout(() => { // ESPERA 5 segundos para executar o resolve
+        setTimeout(() => { // ESPERA 2 segundos para executar o resolve
             resolve({ nome: "Willian", idade: 18 });
         }, 2000);
     } else {
