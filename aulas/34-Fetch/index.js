@@ -1,10 +1,14 @@
 //Com a fetch podemos fazer requisições HTTP, e o que é retornado pra ela é uma PROMISE
 const documento = fetch('./documento.txt'); // Caminho do arquivo
 const conteudo = document.querySelector('.content');
-// O método text() retorna outra promesa, e o valor dela é o texto do arquivo HTTP
+
 documento
-  .then((resultado) => resultado.text())
+  .then((resultado) => {
+    console.log(resultado);
+    return resultado.text()
+  }) // O método text() retorna o valor dela em formato de texto.
   .then((texto) => {
+    console.log(texto);
     conteudo.innerHTML = texto;
   });
 
