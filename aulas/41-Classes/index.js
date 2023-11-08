@@ -18,7 +18,7 @@ console.log(botaoAmarelo.elemento());
 
 // As classes foram criadas para trazer uma sintaxe mais limpa para criar funções construtoras.
 class Botao2 {
-    // No constructor colocamos as propriedades do objeto
+    // No "constructor" colocamos as propriedades do objeto
     constructor(texto, background) {
         this.texto = texto;
         this.background = background;

@@ -1,4 +1,4 @@
-// async para dizer que a função é asincrona
+// async para dizer que a função é assincrona
 async function pegarDados() {
     //Usar await indicar que a promise irar esperar. await só vai em partes que retornam uma promesa
     const dadosPessoais = await fetch("./usuario.json")
