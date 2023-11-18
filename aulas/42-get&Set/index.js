@@ -21,7 +21,7 @@ const botao2 = {
     },
 };
 
-botao2.elemento = 400; // nada acontece
+botao2.tamanho = 400; // nada acontece
 console.log(botao2.tamanho); // 300
 
 const card = {
